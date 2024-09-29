@@ -17,12 +17,12 @@ const Root = styled(Box)(({ theme }) => ({
 
 const Banner = () => {
     return (
-        <Root mt={8} py={10} sx={{ backgroundColor: (theme) => theme.palette.secondary.main }}>
+        <Root mt={8} py={10} sx={{ backgroundColor: (theme) => theme.palette.secondary.main }} id="home">
             <Container maxWidth="md" >
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}  // Starting state
+                    initial={{ opacity: 0, y: 100 }}  // Starting state
                     animate={{ opacity: 1, y: 0 }}   // Ending state
-                    transition={{ duration: 1 }}     // Transition duration
+                    transition={{ duration: 0.5 }}     // Transition duration
                 >
 
                     <Stack spacing={2} border={1} borderColor={"primary.main"} borderRadius={10} p={5} textAlign={"center"}>

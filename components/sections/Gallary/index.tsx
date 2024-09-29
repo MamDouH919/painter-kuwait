@@ -88,7 +88,7 @@ const data = [image1, image2, image3, image4, image5, image6, image7, image8, im
 
 function App() {
     return (
-        <Root className="container">
+        <Root className="container" id="our-work-gallery">
             <SectionTitle
                 sectionTitle='معرض اعمالنا'
             />

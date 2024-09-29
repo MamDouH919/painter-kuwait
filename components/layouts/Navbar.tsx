@@ -17,6 +17,9 @@ import { keyframes } from '@mui/system';
 // import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
+import { Link as ScrollLink } from "react-scroll";
+import { useTheme } from '@mui/material';
+
 
 // import { useAppSelector } from '../store/store';
 
@@ -83,23 +86,57 @@ const StyledHeaderLinkPath = styled(Link)(({ theme }) => ({
     },
 }));
 
-const HeaderLinkPath = ({ to, className, children }: { to: string, className?: string, children: React.ReactNode }) => {
+const StyledHeaderLink = styled(ScrollLink)(({ theme }) => ({
+    display: "inline-block",
+    textDecoration: "none",
+    textTransform: "uppercase",
+    fontSize: 15,
+    fontWeight: 500,
+    color: theme.palette.text.secondary,
+    whiteSpace: "nowrap",
+    [theme.breakpoints.up("md")]: {
+        margin: theme.spacing(0, 1.5),
+    },
+    "&:hover": {
+        color: theme.palette.primary.main,
+        cursor: "pointer",
+    },
+    [theme.breakpoints.down("md")]: {
+        textAlign: "center",
+        padding: theme.spacing(1, 0),
+
+        width: "100%",
+        color: theme.palette.text.secondary,
+    },
+}));
+
+const HeaderLinkPath = ({ to, onClick, children }: { to: string, onClick?: any, children: React.ReactNode }) => {
     // const theme = useTheme();
+    const theme = useTheme();
+
     return (
-        <StyledHeaderLinkPath
-            href={to}
-            className={className}
+        <StyledHeaderLink
+            href={"/"}
+            onClick={onClick}
+            activeClass={classes.activeLink}
+            spy={true}
+            hashSpy={true}
+            smooth={true}
+            duration={1000}
+            offset={-theme.mixins.toolbar.minHeight!}
+            to={to}
         >
             {children}
-        </StyledHeaderLinkPath>
+        </StyledHeaderLink>
     );
 };
 
 const NavLinks = [
-    { href: "/", label: "home" },
-    { href: "/clients", label: "clients" },
-    { href: "/employment", label: "employment" },
-    { href: "/news", label: "news" },
+    { label: "الصفحة الرئيسية", key: "home" },
+    { label: "معلومات عنا", key: "about-us" },
+    { label: "معرض أعمالنا", key: "our-work-gallery" },
+    { label: "روابط سرية", key: "articles" },
+    { label: "خدماتنا", key: "our-services" },
 ]
 
 function Navbar() {
@@ -157,9 +194,8 @@ function Navbar() {
                         <Stack direction={"row"} alignItems={"center"} spacing={1} useFlexGap sx={{ display: { xs: 'none', md: 'flex' } }}>
                             {NavLinks.map((link, index) => (
                                 <HeaderLinkPath
-                                    key={index}
-                                    to={link.href}
-                                    className={clsx({ [classes.activeLink]: pathname === link.href })}
+                                    key={link.key}
+                                    to={link.key}
                                 >
                                     {link.label}
                                 </HeaderLinkPath>
@@ -205,7 +241,11 @@ function Navbar() {
                                         // </HeaderLinkPath>
                                         <Fragment key={index}>
                                             <MenuItem onClick={handleCloseNavMenu}>
-                                                <HeaderLinkPath to={link.href} className={clsx({ [classes.activeLink]: pathname === link.href })}>
+                                                <HeaderLinkPath
+                                                    key={link.key}
+                                                    onClick={handleCloseNavMenu}
+                                                    to={link.key}
+                                                >
                                                     {link.label}
                                                 </HeaderLinkPath>
                                             </MenuItem>
