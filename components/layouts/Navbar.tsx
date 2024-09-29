@@ -15,8 +15,6 @@ import { styled } from "@mui/material/styles";
 // import DarkModeIcon from './DarkModeIcon';
 import { keyframes } from '@mui/system';
 // import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'
 import { Link as ScrollLink } from "react-scroll";
 import { useTheme } from '@mui/material';
 
@@ -62,30 +60,6 @@ const Root = styled(AppBar)(({ theme }) => ({
     },
 }));
 
-const StyledHeaderLinkPath = styled(Link)(({ theme }) => ({
-    display: "inline-block",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    fontSize: 15,
-    fontWeight: 500,
-    color: theme.palette.text.secondary,
-    whiteSpace: "nowrap",
-    [theme.breakpoints.up("md")]: {
-        margin: theme.spacing(0, 1.5),
-    },
-    "&:hover": {
-        color: theme.palette.primary.main,
-        cursor: "pointer",
-    },
-    [theme.breakpoints.down("md")]: {
-        textAlign: "center",
-        padding: theme.spacing(1, 0),
-
-        width: "100%",
-        color: theme.palette.text.secondary,
-    },
-}));
-
 const StyledHeaderLink = styled(ScrollLink)(({ theme }) => ({
     display: "inline-block",
     textDecoration: "none",
@@ -110,7 +84,7 @@ const StyledHeaderLink = styled(ScrollLink)(({ theme }) => ({
     },
 }));
 
-const HeaderLinkPath = ({ to, onClick, children }: { to: string, onClick?: any, children: React.ReactNode }) => {
+const HeaderLinkPath = ({ to, onClick, children }: { to: string, onClick?: () => void, children: React.ReactNode }) => {
     // const theme = useTheme();
     const theme = useTheme();
 
@@ -143,7 +117,6 @@ function Navbar() {
     const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
     const [shouldShowHeader, setShouldShowHeader] = useState<boolean>(false);
     const [animationClass, setAnimationClass] = useState<string>('');
-    const pathname = usePathname()
 
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -192,7 +165,7 @@ function Navbar() {
                     </Stack>
                     <Stack direction={"row"} spacing={1} useFlexGap alignItems={"center"}>
                         <Stack direction={"row"} alignItems={"center"} spacing={1} useFlexGap sx={{ display: { xs: 'none', md: 'flex' } }}>
-                            {NavLinks.map((link, index) => (
+                            {NavLinks.map((link) => (
                                 <HeaderLinkPath
                                     key={link.key}
                                     to={link.key}
