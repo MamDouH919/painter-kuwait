@@ -79,7 +79,7 @@ const About = () => {
                                 <AnimatedImage position={index % 2 === 0 ? 100 : -100}>
                                     <Image
                                         src={element.image}
-                                        alt="image"
+                                        alt={element.title}
                                         width={1200}
                                         height={400}
                                         style={{
