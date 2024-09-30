@@ -14,6 +14,15 @@ import sabaagh_mumtaz_bi_alkuayt from '@/app/Images/links-images/sabaagh_mumtaz_
 import dikurat_sabagh_lilkuayt from '@/app/Images/links-images/dikurat_sabagh_lilkuayt.webp';
 import manazil_sabaagh_bi_alkuayt from '@/app/Images/links-images/manazil_sabaagh_bi_alkuayt.jpg';
 import shaqaq_sabaagh_bi_alkuayt from '@/app/Images/links-images/shaqaq_sabaagh_bi_alkuayt.jpg';
+import sabaagh_buyut_aitfal from '@/app/Images/links-images/sabaagh_buyut_aitfal.jpg';
+import sabaagh_rusumat_aitfal from '@/app/Images/links-images/sabaagh_rusumat_aitfal.jpeg';
+import sabaagh_rakhisat_bi_alkuayt from '@/app/Images/links-images/sabaagh_rakhisat_bi_alkuayt.jpg';
+import dihanat_alkuayt from '@/app/Images/links-images/dihanat_alkuayt.webp';
+import tarkib_waraq_judran from '@/app/Images/links-images/tarkib_waraq_judran.jpg';
+import asbagh_abwab_khashabia from '@/app/Images/links-images/asbagh_abwab_khashabia.jpg';
+import muealim_jabs_burd from '@/app/Images/links-images/muealim_jabs_burd.jpg';
+import sabaagh_alsaalimia from '@/app/Images/links-images/sabaagh_alsaalimia.jpg';
+import sabaagh_sabah_alsaalim from '@/app/Images/links-images/sabaagh_sabah_alsaalim.webp';
 
 
 import Information from './Information';
@@ -23,7 +32,7 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 const linksData: { [key: string]: React.ReactNode } = {
     aspagh: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 أصباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -34,7 +43,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     sabaagh_rakhis: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 أصباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -45,7 +54,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     sabaagh_shatir: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ شاطر - صباغ ممتاز - صباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -56,7 +65,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     muealim_sabagh: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 أصباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -68,7 +77,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     sabaagh_alkuayt: (
         <Stack alignItems="center" spacing={2}>
             {/* <Image src={sabaagh_alkuayt} alt="صباغ الكويت" objectFit="contain" height={400} /> */}
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -79,7 +88,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     aisbgh_alkuayt: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 أصباغ الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -90,7 +99,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     sabaagh_shatir_bi_alkuayt: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ شاطر بالكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -102,7 +111,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     muealim_sabaagh_bi_alkuayt: (
         <Stack alignItems="center" spacing={2}>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     معلم صباغ محترف لخدمات الطلاء المنزلي
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -111,7 +120,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     أهم النقاط معلم صباغ
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -120,7 +129,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     لماذا تحتاج إلى معلم صباغ محترف؟
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -129,7 +138,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     اختيار معلم صباغ الجدران الصحيح
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -138,7 +147,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     إعداد السطح قبل البدء بالصباغة
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -147,7 +156,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     أهمية اختيار الألوان المناسبة
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -156,7 +165,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     تقنيات الصباغة المختلفة
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -165,7 +174,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     المعدات والأدوات المستخدمة في عملية الصباغة
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -174,7 +183,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     معلم صباغ للمنازل والشقق والفلل
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -183,7 +192,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     أسعار خدمات معلم صباغ محترف
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -192,7 +201,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     نصائح لاختيار معلم صباغ موثوق
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -201,7 +210,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     العوامل التي تؤثر على عمر الطلاء
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -210,7 +219,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     معلم صباغ الكويت
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -223,7 +232,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     faniy_sabagh: (
         <Stack alignItems="center" spacing={2}>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     فني صباغ - صباغ الكويت
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -232,7 +241,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack spacing={2} alignItems="center">
-                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                     صباغ -صباغ الكويت
                 </Typography>
                 <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -244,7 +253,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     sabaagh_mumtaz_bi_alkuayt: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ ممتاز الكويت - خدمات دهان احترافية
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -255,7 +264,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     dikurat_sabagh_lilkuayt: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 ديكورات الكويت - صباغ ديكورات - صباغ ممتاز ديكورات
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -266,7 +275,7 @@ const linksData: { [key: string]: React.ReactNode } = {
     ),
     manazil_sabaagh_bi_alkuayt: (
         <Stack alignItems="center" spacing={2}>
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ منازل الكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -283,7 +292,7 @@ const linksData: { [key: string]: React.ReactNode } = {
                 placeholder="blur"
                 sizes="(max-width: 600px) 250px, 400px"
             /> */}
-            <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                 صباغ شقق بالكويت - صباغ شقق - صباغ شقق شاطر بالكويت - صباغ شقق ممتاز بالكويت
             </Typography>
             <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -292,11 +301,132 @@ const linksData: { [key: string]: React.ReactNode } = {
             <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
         </Stack>
     ),
+    sabaagh_buyut_aitfal: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                صباغ بيوت أطفال
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                صباغ بيوت هو افضل خدمة صباغ يقدمها صباغ الكويت في البيوت جميع انواع الدهانات المطفية والزيتة اذا كنت تبحث عن افضل و احدث تصميمات الثري دى التي اصبحت من احدث الصيحات فى مجال الديكورات. فان صباغ الكويت يمتلك باقة من الالبومات التي تضم افضل رسومات ورق الجدران التى تتناسب مع كل اذواق و اراء عملاء صباغ الكويت. ليس فقط الرسومات عزيزى العميل و لكن ايضا الجودة و السعر فصباغ الكويت يوفر لك ورق الجدار بالشكل الذى تريده و كذلك بافضل جودة و اعلي مستوى و ايضا اقل سعر. يقدم صباغ الكويت جبس بورد باشكال متعددة تتميز بالروعة و الجمال و كذلك تصميمات داخلية و خارجية من الجبس بورد و التى يتم صناعتها على ايدى نخبة من افضل المهندسين و الفنيين المختصين ذوى الخبرة الطويلة فى هذا المجال. مع استخدام افضل الخامات للحصول على اعلى جودة ممكنة للجبس بورد فصباغ الكويت يسعلى دائما للتميز و الجودة و ارضاء كل العملاء .
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    sabaagh_rusumat_aitfal: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                صباغ رسومات اطفال صباغ ممتاز رسومات اطفال - صباغ شاطر رسومات اطفال - صباغ فني رسومات اطفال
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                متوفر لدينا فريق متكامل في صبغ جميع انواع رسومات الاطفال الكرتوني داخل غرف الاطفال بافضل الالوان التي تناسب اعمارهم في الكويت واختيار كاتلوجات رسم لاطفال لاختيارهم افضل الرسومات
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    sabaagh_rakhisat_bi_alkuayt: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                صباغ رخيص بالكويت - صباغ بالكويت رخيص - أصباغ رخيصة - فني صباغ رخيص
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                يواكب الصباغ الشاطر دائمًا أحدث تقنيات الطلاء. من بين هذه التقنيات هي طلاء الرش، الذي يوفر طبقة ملساء ومتساوية على الجدران. إنها تقنية تضمن نتائج مدهشة في وقت قصير. اختيار صباغ شاطر يمكن أن يكون تحديًا، ولكنه يستحق الجهد. أولاً، يجب البحث عن تجارب الآخرين. التعليقات والمراجعات على الإنترنت يمكن أن تكون مفيدة جداً. إذا كان لديهم سجل جيد، فهذه بداية مشجعة. احصل علي صباغ- صباغ شاطر- صباغ رخيص- رقم صباغ رخيص- اصباغ وديكورات- اصباغ- جبس بورد- بديل رخام- ورق جدران- معلم جبس بورد- تركيب ورق جدران– تركيب جبس بورد- ديكورات جبس بورد- معلم جبس بورد باكستاني عن طريق موقعنا المتميز الأن بأفضل العروض. متخصصون فى تنفيذ كل اعمال الصبغ والدهانات وتنفيذ كافه الاع مال بدقه وتميز واتقان من كل اعمال الديكورات والصبغ وديكورات غرف النوم والاسقف والمداخل وغيرها … * لدينا جميع انواع الاصباغ الايطالية والترخيم صبغ لامع – صبغ مطفى – خشن – ناعم – الابداع – الخيال – الروشن – المششكو – سان ماركو – اسبنس ايطالى – ارابيسك – افكت – شمواه – تقليم – تدخين – اكسدة- دريم -فلفت – معجون بارز-
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    dihanat_alkuayt: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                صباغ فني دهانات - فني دهانات بالكويت - صباغ فني بالكويت - افضل فني صباغ دهانات بالكويت
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                فني دهانات الكويت، هي شخص متخصص في العمل على تقديم جميع الخدمات التي تعلق بالدهانات لأي عميل داخل أي مكان داخل دولة الكويت، بشكل أكثر من رائع وتوفير جميع الديكورات الحديثة التي يرغب فيها العملاء، لذلك سنقوم بعرض أهم المعلومات التي تخص فني دهانات الكويت فني دهانات الكويت إن أعمال الدهانات تعد من أهم الأعمال التي تظهر الشكل النهائي للمنزل أو لأي مكان بشكل عام، ولكن تلك الأعمال لا يتمكن أي شخص من القيام بتقديمها للعملاء نظرًا لأنها من ضمن الأعمال التي تتطلب مزيد من المهارة الخاصة والتعليم المسبق لتلك المهنة لكي يتمكن هذا الشخص من تقديمها بالشكل المثالي لها بدون أي أخطاء أو عيوب أو انحرافات عامة، كما أنها تتطلب توفير مجموعة من العدد والأدوات من أجل القدرة على تقديم تلك الخدمة وتلك العدد والأدوات لا يتمكن أي شخص من استخدامها سوى الشخص الذي تعلم على استخدام تلك العدد من قبل، لذلك عن القيام بتشطيب أي مكان ودهانه بالكامل فيلجأ العملاء مباشرة إلى الاستعانة بفني دهانات الكويت لأنه يمتلك المهارات والقدرات والإمكانيات التي تساعده على تقديم تلك الخدمة للعملاء بأفضل شكل ممكن لها، كما أن هذا الشخص يمتلك الكثير من العدد والأدوات والأجهزة المتقدمة التي تساعده على ذلك، بخلاف الخبرات الواسعة جدًا التي يمتلكها هذا الشخص داخل هذا المجال أفضل فني دهانات الكويت يوجد أكثر من شخص يعمل فني دهانات في أي مكان سواء داخل دولة الكويت أو خارجها، ولكن كل شخص من الذين يقدمون هذه الخدمات للعملاء يقدم تلك الخدمة بشكل وأسلوب خاص به ومن الوارد أن يكون هذا الأسلوب غير متوافق مع طلبات ورغبات وأماني العملاء فيما يرغبون في القيام بتنفيذه داخل أي مكان يمتلكونه، لذلك يعتبر فني دهانات الكويت من أفضل الأشخاص الذين يتمكنوا من توفير تلك الخدمة للعملاء نظرًا لكمية المهارات العديدة التي يمتلكها هذا الشخص بشكل عام، كما أن لديه القدرة على القيام بتنفيذ جميع الديكورات والتصميمات العالمية التي يتمنى أي عميل القيام بتنفيذها داخل المكان الذي يخصه أيًا كان نوع هذا المكان ومهما كان نوع النشاط الذي يتم ممارسته داخل هذا المكان بشكل عام الخدمات التي يعرضها فني دهانات الكويت على عملائه يتمكن صباغ الكويت من عرض العديد من الخدمات المختلفة على جميع عملائه في كل مكان، حيث أن تلك الخدمات هي وسيلة التواصل بين الفني وبين العملاء،
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    tarkib_waraq_judran: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                تركيب ورق جدران - فني تركيب ورق جدران - معلم تركيب ورق جدران في الكويت - ورق جدران الكويت
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                تستخدم شركة تركيب ورق جدران الكويت افضل ورق الجدران من أفضل المحلات التجارية ومنها ورق جدران الفينيل بأنواعه وورق جدران معدني وآخر من النسيج العشبي وأوراق جدران ثلاثية الأبعاد بأشكال مختلفةيقدم معلم تركيب تركيب ورق جدران الكويت كافة خدمات تشطيبات ورق الجدران والدهانات مقابل أسعار مناسبة للجميع، بجانب أنه يوفر خصومات وعروض فعالة على خدمات تشطيبات كاملة لجدران الفلل والمنازليمكنكم الآن طلب خدمات تركيب ورق جدران رخيص الكويت من منازلكم عن طريق التواصل على ارقام الشركة المتاحة على الموقع على مدار الأسبوع وعلى الفور يقوم احد موظفين خدمة العملاء بالرد عليكم وأخذ كافة طلبات تركيب ورق جدران او خدمات الدهانات. ويتم تحديد موعد مناسب حتى يتمكن صباغ معلم تركيب ورق جدران بالكويت من القدوم إلى منازلكم وأخذ كافة مقاسات الجدران والأسقف لكافة الغرف. وكذلك يقوم صباغ الكويت بعرض تصاميم الدهانات وتصاميم اشكال اوراق الجدران على العملاء لاختيار الأشكال المفضلة لديهم على حسب أذواقهم وبعد ذلك يقوم الفني أو الصباغ بتوفير جميع المستلزمات من الادوات والدهانات واوراق الحائط ومعدات التركيب ويبدأ فورا في إنجاز المهام.
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    asbagh_abwab_khashabia: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                صباغ ابواب خشب - صباغ ابواب خشب في الكويت - صباغ ممتاز ابواب خشب - صباغ فني ابواب خشب في الكويت
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                صباغة الأبواب الخشبية مهمة للحفاظ على جمال المنزل. الأبواب الخشبية، مثل تلك من اللكر أو الناري الرمادي، تتعرض للعوامل الجوية. هذا يؤثر على مظهرها وجودتها. لذلك، الصباغة المحترفة ضرورية للحفاظ على جمال الأبواب. التلوين المنتظم يحمي الأبواب من التآكل. ويحافظ على شكلها الأنيق. الدهان الجيد يوفر حماية إضافية للخشب من الرطوبة والحشرات. ويحمي من أشعة الشمس الضارة. صباغة الأبواب الخشبية تساهم في تجديد مظهر الأبواب القديمة. يمكن إعادة صباغة الأبواب بألوان جذابة. هذا يضفي لمسة جمالية للمنزل ويحسن من المظهر العام. الأبواب الخشبية الملونة تضيف لمسة من الأناقة للمنزل. تعكس ذوقًا رفيعًا في الديكورات الداخلية. صباغة الأبواب الخشبية تعتبر استثمارًا مهمًا للحفاظ على جودة المنزل. تعزيز القيمة الجمالية للأبواب سواء كانت داخلية أو خارجية. عند البحث عن صباغ أبواب خشب ماهر في الكويت، من المهم التركيز على الخبرة والمهارة. الصباغ المحترف لديه معرفة واسعة بكل أنواع الدهانات وتقنيات رش طلاء الخشب بشكل احترافي. كما يتميز بالدقة والعناية لضمان نتائج مثالية
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    muealim_jabs_burd: (
+        <Stack alignItems="center" spacing={2}>
+            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                معلم جبس بورد الكويت - جبس بورد -فني جبس بورد - جبس بورد الكويت
+            </Typography>
+            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                معلم جبس بورد الكويت للحصول علي قواطع وديكورات احترافية في اعمال الجبس تحويل منزلك الي تحفة فنية مع افضل فني ديكورات الجبسون بورد بالكويت افضل التصميمات المتغيرة والتي يمكنك وضعها في اي موضع للتناسب مع المكان المراد العمل عليه ابو مصطفى لاعمال الديكور والجبس هو خيارك الأمثل للحصول علي أحدث تقنيات وديكورات الجبس بورد الإحترافية فنيين يمكنهم تحويل منزلك الي تحفه فنيه للتميز بين الأقارب والأصحاب يمكنك الأن التواصل مع الفني لطلب معلم جبس بورد شاطر فنيين خبرة مسؤولون عن تركيب ألواح الجبس في مجموعة متنوعة من الأماكن ، بما في ذلك المباني السكنية والتجارية والصناعية. يضمنون تثبيت ألواح جبس بورد المنزل بشكل صحيح وآمن ، وفقًا لقوانين ولوائح البناء. تقديم افضل الحلول الهندسية في كل ما يخص الجبس بورد وصيانة الديكورات التي تحتاج الي تعديل او صيانة تجهيز المنزل باحدث صياحات الديكورات التي تظهر الزوق الرفيع لاصحاب المنزل يمكنك الحصول على المكان المثالي في الحداثة لمنزلك, مع افضل معلم جبس بورد بالكويت اتصل بنا الآن لتبدأ في مشروعك فريقنا متاح على مدار الساعة طوال أيام الأسبوع لمساعدتك في إنجاز المهمة بالشكل الصحيح.
+            </Typography>
+            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+        </Stack>
+    ),
+    sabaagh_alsaalimia: (
+        <Stack alignItems="center" spacing={2}>
+            <Stack spacing={2} alignItems="center">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    صباغ السالمية - صباغ الكويت
+                </Typography>
+                <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                    يعتبر صباغ السالمية في منطقة الكويت هو الصباغ الاول في الوطن العربي لجميع اصباغ دولة الكويت اتصل الان علي صباغ السالمية واحصل علي خصم 30%علي جميع انواع الاصباغ
+                </Typography>
+                <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+            </Stack>
+            <Stack spacing={2} alignItems="center">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    صباغ - صباغ الكويت
+                </Typography>
+                <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                    يعتبر صباغ من اهم الكلمات المستخدمة في مجال اصباغ الكويت وتعني دهانات المنازل والشقق والقسائم وعمل ديكورات في البيوت وتصميم رسومات في شقق الاطفال داخل دولة الكويت تعتبر الصباغة جزءًا مهمًا لتجديد المنازل والمباني. في الكويت، هناك شركات متخصصة تقدم خدمات صباغة متنوعة. هذه الشركات تستخدم تقنيات حديثة ومواد عالية الجودة لتحقيق أفضل النتائج. تشمل خدمات الصباغة في الكويت صباغة داخلية وخارجية، ورق جدران، وحل مشاكل الجدران. الصباغ المحترف في الكويت يركز على السلامة ويعد المكان جيدًا قبل البدء بالعمل. 80% من الأفراد يشعرون بالسعادة بعد تغيير لون منازلهم. تحسين مظهر المنزل يمكن أن يزيد من قيمته. لذلك، اختيار شركة صباغة محترفة مهم للحصول على أفضل النتائج بأسعار معقولة.
+                </Typography>
+                <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+            </Stack>
+
+        </Stack>
+    ),
+    sabaagh_sabah_alsaalim: (
+        <Stack alignItems="center" spacing={2}>
+            <Stack spacing={2} alignItems="center">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    صباغ صباح السالم في الكويت - صباغ الكويت
+                </Typography>
+                <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                    يعتبر صباغ السالمية في منطقة الكويت هو الصباغ الاول في الوطن العربي لجميع اصباغ دولة الكويت اتصل الان علي صباغ السالمية واحصل علي خصم 30%علي جميع انواع الاصباغ
+                </Typography>
+                <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+            </Stack>
+            <Stack spacing={2} alignItems="center">
+                <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+                    صباغ - صباغ الكويت
+                </Typography>
+                <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
+                    يعتبر صباغ من اهم الكلمات المستخدمة في مجال اصباغ الكويت وتعني دهانات المنازل والشقق والقسائم وعمل ديكورات في البيوت وتصميم رسومات في شقق الاطفال داخل دولة الكويت تعتبر الصباغة جزءًا مهمًا لتجديد المنازل والمباني. في الكويت، هناك شركات متخصصة تقدم خدمات صباغة متنوعة. هذه الشركات تستخدم تقنيات حديثة ومواد عالية الجودة لتحقيق أفضل النتائج. تشمل خدمات الصباغة في الكويت صباغة داخلية وخارجية، ورق جدران، وحل مشاكل الجدران. الصباغ المحترف في الكويت يركز على السلامة ويعد المكان جيدًا قبل البدء بالعمل. 80% من الأفراد يشعرون بالسعادة بعد تغيير لون منازلهم. تحسين مظهر المنزل يمكن أن يزيد من قيمته. لذلك، اختيار شركة صباغة محترفة مهم للحصول على أفضل النتائج بأسعار معقولة.
+                </Typography>
+                <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
+            </Stack>
+
+        </Stack>
+    ),
     // manazil_sabaagh_bi_alkuayt: (
     //     <Stack alignItems="center" spacing={2}>
-    //         <Image src={dikurat_sabagh_lilkuayt} alt="" objectFit="contain" height={400} />
-
-    //         <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
+    //         <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
 
     //         </Typography>
     //         <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
@@ -360,5 +490,17 @@ const ImagesData: { [key: string]: React.ReactNode } = {
     dikurat_sabagh_lilkuayt: <ImageStyle src={dikurat_sabagh_lilkuayt} alt="ديكورات الكويت - صباغ ديكورات - صباغ ممتاز ديكورات" />,
     manazil_sabaagh_bi_alkuayt: <ImageStyle src={manazil_sabaagh_bi_alkuayt} alt="صباغ منازل الكويت" />,
     shaqaq_sabaagh_bi_alkuayt: <ImageStyle src={shaqaq_sabaagh_bi_alkuayt} alt="صباغ شقق بالكويت - صباغ شقق - صباغ شقق شاطر بالكويت - صباغ شقق ممتاز بالكويت" />,
+    sabaagh_buyut_aitfal: <ImageStyle src={sabaagh_buyut_aitfal} alt="صباغ بيوت أطفال" />,
+    sabaagh_rusumat_aitfal: <ImageStyle src={sabaagh_rusumat_aitfal} alt="صباغ رسومات اطفال صباغ ممتاز رسومات اطفال - صباغ شاطر رسومات اطفال - صباغ فني رسومات اطفال" />,
+    sabaagh_rakhisat_bi_alkuayt: <ImageStyle src={sabaagh_rakhisat_bi_alkuayt} alt="صباغ رخيص بالكويت - صباغ بالكويت رخيص - أصباغ رخيصة - فني صباغ رخيص" />,
+    dihanat_alkuayt: <ImageStyle src={dihanat_alkuayt} alt="صباغ فني دهانات - فني دهانات بالكويت - صباغ فني بالكويت - افضل فني صباغ دهانات بالكويت" />,
+    tarkib_waraq_judran: <ImageStyle src={tarkib_waraq_judran} alt="تركيب ورق جدران - فني تركيب ورق جدران - معلم تركيب ورق جدران في الكويت - ورق جدران الكويت" />,
+    asbagh_abwab_khashabia: <ImageStyle src={asbagh_abwab_khashabia} alt="صباغ ابواب خشب - صباغ ابواب خشب في الكويت - صباغ ممتاز ابواب خشب - صباغ فني ابواب خشب في الكويت" />,
+    muealim_jabs_burd: <ImageStyle src={muealim_jabs_burd} alt="معلم جبس بورد الكويت - جبس بورد -فني جبس بورد - جبس بورد الكويت" />,
+    sabaagh_alsaalimia: <ImageStyle src={sabaagh_alsaalimia} alt="صباغ السالمية" />,
+    sabaagh_sabah_alsaalim: <ImageStyle src={sabaagh_sabah_alsaalim} alt="صباغ صباح السالم في الكويت" />,
+    // shaqaq_sabaagh_bi_alkuayt: <ImageStyle src={shaqaq_sabaagh_bi_alkuayt} alt="" />,
+    // shaqaq_sabaagh_bi_alkuayt: <ImageStyle src={shaqaq_sabaagh_bi_alkuayt} alt="" />,
+    // shaqaq_sabaagh_bi_alkuayt: <ImageStyle src={shaqaq_sabaagh_bi_alkuayt} alt="" />,
     // shaqaq_sabaagh_bi_alkuayt: <ImageStyle src={shaqaq_sabaagh_bi_alkuayt} alt="" />,
 }

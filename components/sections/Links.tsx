@@ -70,6 +70,51 @@ const links = [
         title: "صباغ شقق بالكويت",
         href: "/shaqaq_sabaagh_bi_alkuayt",
     },
+    {
+        id: 14,
+        title: "صباغ بيوت اطفال",
+        href: "/sabaagh_buyut_aitfal",
+    },
+    {
+        id: 15,
+        title: "صباغ رسومات اطفال",
+        href: "sabaagh_rusumat_aitfal",
+    },
+    {
+        id: 16,
+        title: "صباغ رخيص بالكويت",
+        href: "sabaagh_rakhisat_bi_alkuayt",
+    },
+    {
+        id: 17,
+        title: "دهانات الكويت",
+        href: "dihanat_alkuayt",
+    },
+    {
+        id: 18,
+        title: "تركيب ورق جدران",
+        href: "tarkib_waraq_judran",
+    },
+    {
+        id: 19,
+        title: "اصباغ ابواب خشب",
+        href: "asbagh_abwab_khashabia",
+    },
+    {
+        id: 20,
+        title: "معلم جبس بورد",
+        href: "muealim_jabs_burd",
+    },
+    {
+        id: 21,
+        title: "صباغ السالمية",
+        href: "sabaagh_alsaalimia",
+    },
+    {
+        id: 21,
+        title: "صباغ صباح السالم",
+        href: "sabaagh_sabah_alsaalim",
+    },
 ]
 
 const Links = () => {

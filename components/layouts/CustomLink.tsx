@@ -12,13 +12,12 @@ const Root = styled("div")(({ theme }) => ({
     // background: theme.palette.background.default,
     "a": {
         textDecoration: "none",
-        color: theme.palette.secondary.main,
+        color: theme.palette.getContrastText(theme.palette.primary.light),
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         fontSize: "14px",
         textTransform: "capitalize",
-        margin: theme.spacing(0, 1),
         transition: "all 0.5s",
         padding: theme.spacing(1, 2),
         background: theme.palette.primary.light,
@@ -26,6 +25,7 @@ const Root = styled("div")(({ theme }) => ({
         boxShadow: "2px 5px 2px rgba(0, 0, 0, 0.25)",
         [`&:hover`]: {
             background: theme.palette.primary.main,
+            color: theme.palette.getContrastText(theme.palette.primary.main),
             // color: `${theme.palette.primary.light}!Important`,
             // font: "bold",
             // textDecoration: "underline",
