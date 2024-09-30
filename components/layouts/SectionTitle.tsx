@@ -29,7 +29,7 @@ const SectionTitle = (props: inputProps) => {
     const { sectionTitle, subSectionTitle } = props
     return (
         <Root style={{ margin: "5px 0" }}>
-            <Typography variant='h3' fontSize={30} textAlign={"center"} textTransform={"capitalize"} color={"primary.main"}>
+            <Typography variant='h2' fontSize={30} textAlign={"center"} textTransform={"capitalize"} color={"primary.main"}>
                 {sectionTitle}
             </Typography>
             <Typography variant='body2' fontSize={14} textAlign={"center"} color={"text.secondary"} mt={1} width={"80%"} mx={"auto"}>

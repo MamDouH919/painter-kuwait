@@ -117,12 +117,12 @@ function App() {
             >
                 {data.map((element, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={element} alt="slide_image" />
+                        <Image src={element} alt="صباغ الكويت ، آصباغ الكويت ، أحسن صباغ في الكويت" />
                     </SwiperSlide>
                 ))}
                 {data.map((element, index) => (
                     <SwiperSlide key={index}>
-                        <Image src={element} alt="slide_image" />
+                        <Image src={element} alt="صباغ الكويت ، آصباغ الكويت ، أحسن صباغ في الكويت" />
                     </SwiperSlide>
                 ))}
 

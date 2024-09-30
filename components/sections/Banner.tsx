@@ -6,12 +6,18 @@ import React from 'react';
 
 const PREFIX = "Banner";
 const classes = {
-    text: `${PREFIX}-text`
+    text: `${PREFIX}-text`,
+    title: `${PREFIX}-title`
 };
 
 const Root = styled(Box)(({ theme }) => ({
     [`& .${classes.text}`]: {
         color: theme.palette.getContrastText(theme.palette.secondary.main)
+    },
+    [`& .${classes.title}`]: {
+        color: theme.palette.primary.main,
+        fontSize: theme.spacing(3.5),
+        fontWeight: "bold"
     },
 }));
 
@@ -22,11 +28,11 @@ const Banner = () => {
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}  // Starting state
                     animate={{ opacity: 1, y: 0 }}   // Ending state
-                    transition={{ duration: 0.5 }}     // Transition duration
+                    transition={{ duration: 0.1 }}     // Transition duration
                 >
 
                     <Stack spacing={2} border={1} borderColor={"primary.main"} borderRadius={10} p={5} textAlign={"center"}>
-                        <Typography color='primary.main' variant="h1" fontSize={30} component="h1" fontWeight={"bold"}>
+                        <Typography variant='h1' className={classes.title}>
                             صباغ الكويت
                         </Typography>
                         <Typography className={classes.text}>
