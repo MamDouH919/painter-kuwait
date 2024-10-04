@@ -73,18 +73,21 @@ const About = () => {
                             alignItems={"center"}
                             flexDirection={index % 2 === 0 ? "row" : "row-reverse"}
                             m={0}
-                            border={1}
-                            borderColor={"primary.main"} borderRadius={10} p={3} textAlign={"center"}>
+                            // border={1}
+                            // borderColor={"primary.main"}
+                            // borderRadius={10}
+                            p={3}
+                            textAlign={"center"}
+                        >
                             <Grid size={{ xs: 12, md: 6 }}>
                                 <AnimatedImage position={index % 2 === 0 ? 100 : -100}>
                                     <Image
                                         src={element.image}
                                         alt={element.title}
-                                        width={1200}
-                                        height={400}
+
                                         style={{
-                                            objectFit: 'contain',
                                             width: "100%",
+                                            height: "auto",
                                             borderRadius: 10
                                         }}
                                     />
@@ -97,7 +100,7 @@ const About = () => {
                                 <Typography color={"text.secondary"} fontSize={15}>
                                     {element.description}
                                 </Typography>
-                                <Box bgcolor={"secondary.dark"} style={{ height: 2, width: 80}}></Box>
+                                <Box bgcolor={"secondary.dark"} style={{ height: 2, width: 80 }}></Box>
                             </Grid>
                         </Grid>
                     </AnimatedDiv>
@@ -134,6 +137,7 @@ const AnimatedImage: React.FC<{ children: React.ReactNode, position: number }> =
             initial={{ opacity: 0, x: position }} // Initial state
             animate={isInView ? { opacity: 1, x: 0 } : {}} // Animate if in view
             transition={{ duration: 1 }} // Transition duration
+            style={{ display: 'flex', flexDirection: 'column' }}
         >
             {children}
         </motion.div>

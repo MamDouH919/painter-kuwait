@@ -5,7 +5,7 @@ const Information = () => {
     return (
         <Stack spacing={2}>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     صباغ
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>
@@ -15,7 +15,7 @@ const Information = () => {
                 <Divider component={Stack} orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     أصباغ الكويت
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>
@@ -24,7 +24,7 @@ const Information = () => {
                 <Divider component={Stack} orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     اهمية الدهانات
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>
@@ -33,7 +33,7 @@ const Information = () => {
                 <Divider component={Stack} orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     خدمات عملاء صباغ الكويت
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>
@@ -42,7 +42,7 @@ const Information = () => {
                 <Divider component={Stack} orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     صباغ دهان حوائط
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>
@@ -51,7 +51,7 @@ const Information = () => {
                 <Divider component={Stack} orientation="horizontal" sx={{ width: '30%' }} />
             </Stack>
             <Stack alignItems={"center"} spacing={2}>
-                <Typography variant="h3" fontWeight={500} fontSize={30} color='primary.main'>
+                <Typography variant="h3" textAlign={"center"} fontWeight={500} fontSize={30} color='primary.main'>
                     من هو أفضل صباغ منازل في الكويت؟
                 </Typography>
                 <Typography textAlign={"center"} fontSize={18} color='text.secondary' width={{ xs: "auto", md: "80%" }}>

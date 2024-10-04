@@ -2,8 +2,7 @@
 import { Fab, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import clsx from "clsx";
-import { FaArrowUp, FaWhatsapp } from "react-icons/fa";
-import { RiMessengerLine } from "react-icons/ri";
+import { FaArrowUp, FaPhone, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -20,7 +19,7 @@ const classes = {
 const StyledIconButton = styled(Stack)(({ theme }) => ({
   [`&.${classes.icons}`]: {
     position: "fixed",
-    right: 27,
+    right: 10,
     bottom: 10,
     zIndex: 100
   },
@@ -37,9 +36,9 @@ const StyledIconButton = styled(Stack)(({ theme }) => ({
     },
   },
   [`& .${classes.messengerIcon}`]: {
-    backgroundColor: "#0695FF",
+    backgroundColor: "#2196f3",
     color: "#FFF",
-    fontSize: "35px",
+    fontSize: "30px",
     cursor: "pointer",
     [`&:hover`]: {
       backgroundColor: "#0b7acc",
@@ -91,22 +90,21 @@ const SocialIcons: React.FC = () => {
       >
         <FaArrowUp />
       </Fab>
-
       <Link
         target="_blank"
         rel="noopener noreferrer"
-        href={""}
+        title="mobile"
+        href={`tel:+96551108895`}
       >
         <Fab className={classes.messengerIcon} aria-label="messenger">
-          <RiMessengerLine />
+          <FaPhone />
         </Fab>
       </Link>
-
-
       <Link
         target="_blank"
         rel="noopener noreferrer"
-        href={""}
+        title="whatsApp"
+        href={`https://wa.me/+96551108895`}
       >
         <Fab className={classes.whatsappIcon} aria-label="whatsapp">
           <FaWhatsapp />

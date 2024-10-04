@@ -8,25 +8,33 @@ const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 
 
 export const metadata: Metadata = {
-  title: "صباغ الكويت",
-  description: "صباغ الكويت هو صباغ شاطر ورخيص في جميع اماكن الكويت",
-  keywords: "صباغ الكويت, صباغ الكويت في الكويت, صباغ الكويت في كويت",
+  title: "صباغ الكويت - خدمات رخيصة واحترافية",
+  description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
+  keywords: "صباغ الكويت, أفضل صباغ في الكويت, خدمات صباغة الكويت, صباغ محترف ورخيص",
   robots: "index,follow",
   openGraph: {
     type: "website",
     locale: "ar",
     url: "https://apartment-paint-kuwait.mountain-egy.site",
-    title: "صباغ الكويت",
-    description: "صباغ الكويت هو صباغ شاطر ورخيص في جميع اماكن الكويت",
-    // images: [
-    //   {
-    //     url: "",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "صباغ الكويت",
-    //   },
-    // ],
+    title: "صباغ الكويت - خدمات رخيصة واحترافية",
+    description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
+    images: [
+      {
+        url: "https://apartment-paint-kuwait.mountain-egy.site/image.png",
+        width: 1200,
+        height: 630,
+        alt: "صباغ الكويت",
+      },
+    ],
     siteName: "صباغ الكويت",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "صباغ الكويت - خدمات رخيصة واحترافية",
+
+    description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
+
+    images: "https://apartment-paint-kuwait.mountain-egy.site/image.png",
   },
   manifest: "/manifest.json",
 };
@@ -39,8 +47,8 @@ export default function RootLayout({
   return (
     <html lang={"ar"} dir={"rtl"}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+        <link rel="canonical" href="https://apartment-paint-kuwait.mountain-egy.site" />
 
         <link
           rel="apple-touch-icon"
@@ -54,12 +62,29 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
+
       </head>
       <body className={cairo.className}>
         <ThemeProv>
           <SocialIcons />
           {children}
         </ThemeProv>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "صباغ الكويت - خدمات رخيصة واحترافية",
+              "description": "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
+              "url": "https://apartment-paint-kuwait.mountain-egy.site",
+              "address": {
+                "addressCountry": "الكويت"
+              }
+            })
+          }}
+        />
       </body>
     </html>
   );
