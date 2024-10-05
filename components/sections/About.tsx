@@ -13,7 +13,7 @@ import image5 from '@/app/Images/about/about1.webp';
 import Image from 'next/image';
 import SectionTitle from '../layouts/SectionTitle';
 
-const PREFIX = "Banner";
+const PREFIX = "About";
 const classes = {
     text: `${PREFIX}-text`
 };

@@ -172,7 +172,10 @@ export const zones = [
     { id: 81, title: "صباغ النزهة", href: "sabaagh_alnuzha" },
     { id: 82, title: "صباغ المنصورية", href: "sabaagh_almansouriya" },
     { id: 83, title: "صباغ المنطقة العاشرة", href: "sabaagh_mantiqa_al_ashira" },
-    { id: 84, title: "صباغ الاندلس", href: "sabaagh_alandalus" }
+    { id: 84, title: "صباغ الاندلس", href: "sabaagh_alandalus" },
+    { id: 85, title: "صباغ القرين", href: "sabaagh_alqrean" },
+    { id: 86, title: "صباغ القصور", href: "sabaagh_alkswor" },
+    { id: 87, title: "صباغ العدان", href: "sabaagh_aladaan" }
 ];
 
 const allLinks = links.concat(zones)

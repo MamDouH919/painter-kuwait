@@ -89,6 +89,9 @@ import sabaagh_alnuzha from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 import sabaagh_almansouriya from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 import sabaagh_mantiqa_al_ashira from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 import sabaagh_alandalus from "@/app/Images/links-images/aisbgh_alkuayt.webp"
+import sabaagh_alqrean from "@/app/Images/links-images/aisbgh_alkuayt.webp"
+import sabaagh_alkswor from "@/app/Images/links-images/aisbgh_alkuayt.webp"
+import sabaagh_aladaan from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 
 import Information from './Information';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
@@ -481,9 +484,6 @@ zones.forEach(location => {
 const LinksContent = ({ id }: { id: string }) => {
     const content = linksData[id]; // Access the content based on ID
     const image = ImagesData[id]
-    console.log("content", content)
-    console.log("content", image)
-
 
     return (
         <Stack spacing={2} alignItems="center">
@@ -578,7 +578,10 @@ const de = {
     sabaagh_alnuzha: <ImageStyle src={sabaagh_alnuzha} alt={"صباغ النزهة"} />,
     sabaagh_almansouriya: <ImageStyle src={sabaagh_almansouriya} alt={"صباغ المنصورية"} />,
     sabaagh_mantiqa_al_ashira: <ImageStyle src={sabaagh_mantiqa_al_ashira} alt={"صباغ المنطقة العاشرة"} />,
-    sabaagh_alandalus: <ImageStyle src={sabaagh_alandalus} alt={"صباغ الاندلس"} />
+    sabaagh_alandalus: <ImageStyle src={sabaagh_alandalus} alt={"صباغ الاندلس"} />,
+    sabaagh_alqrean: <ImageStyle src={sabaagh_alqrean} alt={"صباغ القرين"} />,
+    sabaagh_alkswor: <ImageStyle src={sabaagh_alkswor} alt={"صباغ القصور"} />,
+    sabaagh_aladaan: <ImageStyle src={sabaagh_aladaan} alt={"صباغ العدان"} />
 }
 
 const ImagesData: { [key: string]: React.ReactNode } = {

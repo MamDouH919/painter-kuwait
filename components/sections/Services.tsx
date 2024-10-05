@@ -5,7 +5,7 @@ import { Container, Paper, Stack, Typography } from '@mui/material';
 import SectionTitle from '../layouts/SectionTitle';
 
 
-const PREFIX = "Banner";
+const PREFIX = "Services";
 const classes = {
     text: `${PREFIX}-text`,
     container: `${PREFIX}-container`

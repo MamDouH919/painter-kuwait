@@ -6,7 +6,7 @@ import { FaInstagram, FaRegCopyright } from 'react-icons/fa';
 import Link from 'next/link';
 
 
-const PREFIX = "Banner";
+const PREFIX = "Footer";
 const classes = {
     text: `${PREFIX}-text`,
     container: `${PREFIX}-container`
@@ -72,7 +72,7 @@ const Services = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="instagram"
-                    href={`https://www.instagram.com/osamaku7555gmail.com_/`}
+                    href={`https://www.instagram.com/sameh6051/`}
                 >
                     <Fab aria-label="instagram" size='small'>
                         <FaInstagram size={25} />
