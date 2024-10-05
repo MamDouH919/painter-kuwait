@@ -10,7 +10,7 @@ const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص",
   description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
-  keywords: "صباغ الكويت , أفضل صباغ في الكويت , خدمات صباغة الكويت , صباغ محترف ورخيص, صباغ شاطر , صباغ رخيص , صباغ شقق , صباغ بيوت اطفال , صباغ بيوت , صباغ ابواب , صباغ السالمية , صباغ , الكويت , صباغ في الكويت , اريد صباغ في الكويت , صباغ بالكويت",
+  keywords: "صباغ الكويت , أفضل صباغ في الكويت , خدمات صباغة الكويت , صباغ محترف ورخيص, صباغ شاطر , صباغ رخيص , صباغ شقق , صباغ بيوت اطفال , صباغ بيوت , صباغ ابواب , صباغ السالمية , صباغ , الكويت , صباغ في الكويت , اريد صباغ في الكويت , صباغ بالكويت , الكويت , صباغ , الكويت صباغ",
   robots: "index,follow",
   openGraph: {
     type: "website",
@@ -40,7 +40,8 @@ export const metadata: Metadata = {
   authors: {
     name: "صباغ الكويت",
     url: "https://apartment-paint-kuwait.mountain-egy.site"
-  }
+  },
+  bookmarks: ["صباغ الكويت", "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص", "صباغ", "الكويت"],
 };
 
 export default function RootLayout({
@@ -51,6 +52,8 @@ export default function RootLayout({
   return (
     <html lang={"ar"} dir={"rtl"}>
       <head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta http-equiv="content-language" content="ar" />
         <link rel="canonical" href="https://apartment-paint-kuwait.mountain-egy.site" />
 
         <link
@@ -79,7 +82,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "name": "صباغ الكويت (51108895) - صباغ شاطر - صباغ رخيص",
+              "name": "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص",
               "description": "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
               "url": "https://apartment-paint-kuwait.mountain-egy.site",
               "address": {
