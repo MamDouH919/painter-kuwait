@@ -482,8 +482,10 @@ zones.forEach(location => {
 
 // Main component
 const LinksContent = ({ id }: { id: string }) => {
-    const content = linksData[id]; // Access the content based on ID
-    const image = ImagesData[id]
+    const _id = id.replace(/-/g, '_');
+
+    const content = linksData[_id]; // Access the content based on ID
+    const image = ImagesData[_id]
 
     return (
         <Stack spacing={2} alignItems="center">
