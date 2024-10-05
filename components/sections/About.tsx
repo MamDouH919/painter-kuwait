@@ -90,6 +90,7 @@ const About = () => {
                                             height: "auto",
                                             borderRadius: 10
                                         }}
+                                        loading='lazy'
                                     />
                                 </AnimatedImage>
                             </Grid>

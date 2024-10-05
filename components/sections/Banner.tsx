@@ -18,7 +18,7 @@ const Root = styled(Box)(({ theme }) => ({
     },
     [`& .${classes.title}`]: {
         color: theme.palette.primary.main,
-        fontSize: theme.spacing(3.5),
+        fontSize: theme.spacing(5),
         fontWeight: "bold"
     },
     [`& .${classes.messengerIcon}`]: {
