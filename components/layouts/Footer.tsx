@@ -2,7 +2,7 @@
 import React from 'react'
 import { styled } from "@mui/material/styles";
 import { Fab, Stack, Typography } from '@mui/material';
-import { FaInstagram, FaRegCopyright } from 'react-icons/fa';
+import { FaInstagram, FaRegCopyright, FaTiktok } from 'react-icons/fa';
 import Link from 'next/link';
 
 
@@ -67,7 +67,7 @@ const Services = () => {
         <Root mt={5} p={3} spacing={2} alignItems={"center"}>
             <Typography className={classes.text}>صباغ الكويت الاول في الوطن العربي</Typography>
             <Typography className={classes.text}> تواصل معنا</Typography>
-            <Stack>
+            <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
                 <Link
                     target="_blank"
                     rel="noopener noreferrer"
@@ -76,6 +76,16 @@ const Services = () => {
                 >
                     <Fab aria-label="instagram" size='small'>
                         <FaInstagram size={25} />
+                    </Fab>
+                </Link>
+                <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="tiktok"
+                    href={`https://www.tiktok.com/@userid8g1sm327`}
+                >
+                    <Fab aria-label="instagram" size='small'>
+                        <FaTiktok size={25} />
                     </Fab>
                 </Link>
             </Stack>
