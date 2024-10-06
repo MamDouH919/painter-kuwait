@@ -3,7 +3,6 @@ import "./globals.css";
 import ThemeProv from "@/context/ThemeProv";
 import SocialIcons from "@/components/layouts/SocialIcons";
 import { Cairo } from '@next/font/google'
-import { GoogleAnalytics } from '@next/third-parties/google'
 
 const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
         alt: "صباغ الكويت",
       },
     ],
-    siteName: "صباغ الكويت",
+    siteName: "apartment-paint-kuwait.mountain-egy.site",
   },
   twitter: {
     card: "summary_large_image",
@@ -67,7 +66,8 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-        <GoogleAnalytics gaId="G-YYCCSJQ60Q" />
+        <meta name="google-site-verification" content="X-PztMGTdyBvqrdgLU4z7Wj5BFO-19uxIwLCwtkCbfM" />
+        {/* <GoogleAnalytics gaId="G-YYCCSJQ60Q" /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

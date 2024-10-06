@@ -26,6 +26,7 @@ const classes = {
     stickyHeader: `${PREFIX}-stickyHeader`,
     animationFade: `${PREFIX}-animationFade`,
     activeLink: `${PREFIX}-activeLink`,
+    StyledHeaderLink: `${PREFIX}-StyledHeaderLink`,
 };
 
 const animationFade = keyframes`
@@ -55,43 +56,77 @@ const Root = styled(AppBar)(({ theme }) => ({
         background: theme.palette.background.default,
         boxShadow: theme.shadows[5]
     },
+    [`& .${classes.StyledHeaderLink}`]: {
+        display: "inline-block",
+        textDecoration: "none",
+        textTransform: "uppercase",
+        fontSize: 15,
+        fontWeight: 500,
+        color: theme.palette.text.secondary,
+        whiteSpace: "nowrap",
+        [theme.breakpoints.up("md")]: {
+            margin: theme.spacing(0, 1.5),
+        },
+        "&:hover": {
+            color: theme.palette.primary.main,
+            cursor: "pointer",
+        },
+        [theme.breakpoints.down("md")]: {
+            textAlign: "center",
+            padding: theme.spacing(1, 0),
+
+            width: "100%",
+            color: theme.palette.text.secondary,
+        },
+    },
     [`& .${classes.activeLink}`]: {
         color: theme.palette.primary.main,
     },
+
 }));
-
-const StyledHeaderLink = styled(ScrollLink)(({ theme }) => ({
-    display: "inline-block",
-    textDecoration: "none",
-    textTransform: "uppercase",
-    fontSize: 15,
-    fontWeight: 500,
-    color: theme.palette.text.secondary,
-    whiteSpace: "nowrap",
-    [theme.breakpoints.up("md")]: {
-        margin: theme.spacing(0, 1.5),
-    },
-    "&:hover": {
-        color: theme.palette.primary.main,
-        cursor: "pointer",
-    },
-    [theme.breakpoints.down("md")]: {
-        textAlign: "center",
-        padding: theme.spacing(1, 0),
-
-        width: "100%",
+const MenuItemRoot = styled(MenuItem)(({ theme }) => ({
+    [`& .${classes.StyledHeaderLink}`]: {
+        display: "inline-block",
+        textDecoration: "none",
+        textTransform: "uppercase",
+        fontSize: 15,
+        fontWeight: 500,
         color: theme.palette.text.secondary,
+        whiteSpace: "nowrap",
+        [theme.breakpoints.up("md")]: {
+            margin: theme.spacing(0, 1.5),
+        },
+        "&:hover": {
+            color: theme.palette.primary.main,
+            cursor: "pointer",
+        },
+        [theme.breakpoints.down("md")]: {
+            textAlign: "center",
+            padding: theme.spacing(1, 0),
+
+            width: "100%",
+            color: theme.palette.text.secondary,
+        },
     },
+    [`& .${classes.activeLink}`]: {
+        color: theme.palette.primary.main,
+    },
+
 }));
+
+// const StyledHeaderLink = styled(ScrollLink)(({ theme }) => ({
+
+// }));
 
 const HeaderLinkPath = ({ to, onClick, children }: { to: string, onClick?: () => void, children: React.ReactNode }) => {
     // const theme = useTheme();
     const theme = useTheme();
 
     return (
-        <StyledHeaderLink
+        <ScrollLink
             href={"/"}
             onClick={onClick}
+            className={classes.StyledHeaderLink}
             activeClass={classes.activeLink}
             spy={true}
             hashSpy={true}
@@ -101,7 +136,7 @@ const HeaderLinkPath = ({ to, onClick, children }: { to: string, onClick?: () =>
             to={to}
         >
             {children}
-        </StyledHeaderLink>
+        </ScrollLink>
     );
 };
 
@@ -213,7 +248,7 @@ function Navbar() {
                                         //     {link.label}
                                         // </HeaderLinkPath>
                                         <Fragment key={index}>
-                                            <MenuItem onClick={handleCloseNavMenu}>
+                                            <MenuItemRoot onClick={handleCloseNavMenu} className={classes.StyledHeaderLink}>
                                                 <HeaderLinkPath
                                                     key={link.key}
                                                     onClick={handleCloseNavMenu}
@@ -221,7 +256,7 @@ function Navbar() {
                                                 >
                                                     {link.label}
                                                 </HeaderLinkPath>
-                                            </MenuItem>
+                                            </MenuItemRoot>
                                             {index !== NavLinks.length - 1 && <Divider flexItem />}
                                         </Fragment>
                                     ))}
