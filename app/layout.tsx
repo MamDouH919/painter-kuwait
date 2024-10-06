@@ -3,14 +3,15 @@ import "./globals.css";
 import ThemeProv from "@/context/ThemeProv";
 import SocialIcons from "@/components/layouts/SocialIcons";
 import { Cairo } from '@next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص",
   description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. مع خبرة سنوات، نقدم لك أفضل الحلول لتلوين وتجديد منازلك ومكاتبك بأعلى جودة وبأسعار تنافسية..",
-  keywords: "صباغ الكويت, أفضل صباغ في الكويت, خدمات صباغة الكويت, صباغ محترف ورخيص, صباغ شاطر, صباغ رخيص, صباغ شقق, صباغ بيوت أطفال, صباغ بيوت, صباغ أبواب, صباغ السالمية, صباغ في الكويت, صباغ متخصص, خدمات تجديد المنازل, صباغة داخلية وخارجية, خدمات صبغ بأسعار مناسبة",
   robots: "index,follow",
+  keywords: "صباغ الكويت ,صباغ شاطر ,صباغ رخيص ,صبغ بدون رائحة ,معلم اصباغ ,صباغ في الكويت , صباغ شاطر في الكويت ,صباغ رخيص في الكويت ,اصباغ الكويت ,جميع انواع الاصباغ الحديثة, اصباغ داخلية وخارجية, صبغ مطفى, صبغ لماع, صبغ بداغ صبحان بالكويت ,صباغ الفنيطيس بالكويت ,صباغ المسائل بالكويت ,صباغ العدان بالكويت ,صباغ السلام بالكويت ,صباغ الظهر بالكويت ,صباغ أبو خليفة بالكويت ,صباغ حولي",
   openGraph: {
     type: "website",
     locale: "ar",
@@ -66,7 +67,40 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-
+        <GoogleAnalytics gaId="G-YYCCSJQ60Q" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "@id": "https://apartment-paint-kuwait.mountain-egy.site",
+                "name": "صباغ الكويت",
+                "description": "صباغ الكويت ,افضل صباغ في الكويت لجميع لجميع انواع الاصباغ زيتي- مطفي- صبغ بدون رائحة مع افضل الاسعار ",
+                "url": "https://apartment-paint-kuwait.mountain-egy.site",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "الكويت",
+                  "addressLocality": "مدينة الكويت",
+                  "addressRegion": "الكويت",
+                  "postalCode": "00000",
+                  "addressCountry": "kuwait"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 29.3759,
+                  "longitude": 47.9774
+                },
+                "sameAs": [
+                  "https://www.instagram.com/sameh6051/"
+                ],
+                "image": "https://dyerkwt1.com/image.png",
+                "telephone": "51108895"
+              },
+            )
+          }}
+        />
       </head>
       <body className={cairo.className}>
         <ThemeProv>
@@ -74,26 +108,21 @@ export default function RootLayout({
           {children}
         </ThemeProv>
 
+
+        {/* <script  async src="https://www.googletagmanager.com/gtag/js?id=G-YYCCSJQ60Q"></script>
         <script
-          type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "صباغ الكويت",
-                "description": "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
-                "url": "https://apartment-paint-kuwait.mountain-egy.site",
-                "address": {
-                  "addressCountry": "الكويت"
-                },
-                "sameAs": [
-                  "https://www.instagram.com/sameh6051/"  
-                ]
-              },
-            )
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YYCCSJQ60Q');
+            `,
           }}
-        />
+        /> */}
+
+
+
       </body>
     </html>
   );
