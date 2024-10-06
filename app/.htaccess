@@ -1,4 +1,9 @@
+# Disable MultiViews to prevent Apache from trying to match multiple content types
 Options -MultiViews
+
+# Enable the Rewrite Engine
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.example\.com$
-RewriteRule ^/?$ "http\:\/\/example\.com\/" [R=301,L]
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.apartment-paint-kuwait\.mountain-egy\.site$ [NC]
+RewriteRule ^(.*)$ http://apartment-paint-kuwait.mountain-egy.site/$1 [R=301,L]

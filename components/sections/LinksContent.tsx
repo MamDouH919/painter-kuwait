@@ -476,7 +476,8 @@ const linksData: { [key: string]: React.ReactNode } = {
 
 zones.forEach(location => {
     if (location.href) {
-        linksData[location.href] = generateLinkData(location.title);
+        const _id = location.href.replace(/-/g, '_');
+        linksData[_id] = generateLinkData(location.title);
     }
 });
 
@@ -486,6 +487,10 @@ const LinksContent = ({ id }: { id: string }) => {
 
     const content = linksData[_id]; // Access the content based on ID
     const image = ImagesData[_id]
+
+    console.log(_id);
+    console.log(content);
+    
 
     return (
         <Stack spacing={2} alignItems="center">

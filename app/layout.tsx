@@ -8,7 +8,7 @@ const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص",
-  description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. مع خبرة سنوات، نقدم لك أفضل الحلول لتلوين وتجديد منازلك ومكاتبك بأعلى جودة وبأسعار تنافسية. احجز الآن للحصول على أفضل النتائج.",
+  description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. مع خبرة سنوات، نقدم لك أفضل الحلول لتلوين وتجديد منازلك ومكاتبك بأعلى جودة وبأسعار تنافسية..",
   keywords: "صباغ الكويت, أفضل صباغ في الكويت, خدمات صباغة الكويت, صباغ محترف ورخيص, صباغ شاطر, صباغ رخيص, صباغ شقق, صباغ بيوت أطفال, صباغ بيوت, صباغ أبواب, صباغ السالمية, صباغ في الكويت, صباغ متخصص, خدمات تجديد المنازل, صباغة داخلية وخارجية, خدمات صبغ بأسعار مناسبة",
   robots: "index,follow",
   openGraph: {
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang={"ar"} dir={"rtl"}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <meta http-equiv="content-language" content="ar" />
+        <meta httpEquiv="content-language" content="ar" />
         <link rel="canonical" href="https://apartment-paint-kuwait.mountain-egy.site" />
 
         <link
@@ -77,16 +77,21 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "name": "صباغ الكويت 51108895 - صباغ شاطر - صباغ رخيص",
-              "description": "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
-              "url": "https://apartment-paint-kuwait.mountain-egy.site",
-              "address": {
-                "addressCountry": "الكويت"
-              }
-            })
+            __html: JSON.stringify(
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "صباغ الكويت",
+                "description": "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية في جميع مناطق الكويت. احجز الآن للحصول على أفضل النتائج.",
+                "url": "https://apartment-paint-kuwait.mountain-egy.site",
+                "address": {
+                  "addressCountry": "الكويت"
+                },
+                "sameAs": [
+                  "https://www.instagram.com/sameh6051/"  
+                ]
+              },
+            )
           }}
         />
       </body>
