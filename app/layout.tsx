@@ -4,6 +4,7 @@ import ThemeProv from "@/context/ThemeProv";
 import SocialIcons from "@/components/layouts/SocialIcons";
 import { Cairo } from '@next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 const cairo = Cairo({ weight: "600", subsets: ["latin"] })
 
@@ -66,6 +67,33 @@ export default function RootLayout({
           href="/icon?<generated>"
           type="image/<generated>"
           sizes="<generated>"
+        />
+        <Script
+          id="iubenda-configuration"
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _iub = _iub || [];
+              _iub.csConfiguration = {"siteId":3788909,"cookiePolicyId":28436501,"lang":"en","storage":{"useSiteId":true}};
+            `,
+          }}
+        />
+        <Script
+          id="iubenda-autoblocking"
+          src="https://cs.iubenda.com/autoblocking/3788909.js"
+          type="text/javascript"
+        />
+        <Script
+          id="iubenda-gpp"
+          src="//cdn.iubenda.com/cs/gpp/stub.js"
+          type="text/javascript"
+        />
+        <Script
+          id="iubenda-cs"
+          src="//cdn.iubenda.com/cs/iubenda_cs.js"
+          type="text/javascript"
+          charSet="UTF-8"
+          async
         />
         <GoogleAnalytics gaId="G-YYCCSJQ60Q" />
         <script
