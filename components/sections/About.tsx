@@ -65,7 +65,7 @@ const data = [
 ]
 
 const Root = styled(Container)(({ theme }) => ({
-    margin: theme.spacing(5, 0),
+    margin: theme.spacing(5, "auto"),
     [`& .${classes.text}`]: {
         color: theme.palette.getContrastText(theme.palette.secondary.main)
     },
