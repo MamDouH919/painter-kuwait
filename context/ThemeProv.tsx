@@ -31,7 +31,7 @@ const ThemeProv = ({ children }: { children: React.ReactNode }) => {
             }
         },
         typography: {
-            fontFamily: ['__Cairo_9cbcf0', '__Cairo_Fallback_9cbcf0'].join(","),
+            fontFamily: [ '__Cairo_210179', '__Cairo_Fallback_210179'].join(","),
             fontSize: 12.5,
         }
     });

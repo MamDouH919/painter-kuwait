@@ -23,13 +23,29 @@ const Root = styled("div")(({ theme }) => ({
 interface inputProps {
     sectionTitle: string
     subSectionTitle?: string
+    variant?: Variant
 }
 
+type Variant =
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'subtitle1'
+    | 'subtitle2'
+    | 'body1'
+    | 'body2'
+    | 'caption'
+    | 'button'
+    | 'overline';
+
 const SectionTitle = (props: inputProps) => {
-    const { sectionTitle, subSectionTitle } = props
+    const { sectionTitle, subSectionTitle, variant } = props
     return (
         <Root style={{ margin: "5px 0" }}>
-            <Typography variant='h2' fontSize={30} textAlign={"center"} textTransform={"capitalize"} color={"primary.main"}>
+            <Typography variant={variant ?? 'h2'} fontSize={30} textAlign={"center"} textTransform={"capitalize"} color={"primary.main"}>
                 {sectionTitle}
             </Typography>
             <Typography variant='body2' fontSize={14} textAlign={"center"} color={"text.secondary"} mt={1} width={"80%"} mx={"auto"}>

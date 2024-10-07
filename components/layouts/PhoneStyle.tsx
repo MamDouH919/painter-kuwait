@@ -25,7 +25,7 @@ const Root = styled(Stack)(() => ({
 const PhoneStyle = () => {
     return (
         <Root mt={3} alignItems={"center"} spacing={2}>
-            <Typography component={"h2"} variant='h2' fontSize={35} color={"primary.main"}>اصباغ الراعي</Typography>
+            <Typography fontSize={35} color={"primary.main"}>اصباغ الراعي</Typography>
             <Stack
                 alignItems={"center"}
                 width="fit-content"

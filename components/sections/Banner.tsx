@@ -18,7 +18,6 @@ const Root = styled(Box)(({ theme }) => ({
     [`& .${classes.title}`]: {
         color: theme.palette.primary.main,
         fontSize: theme.spacing(5),
-        fontWeight: "bold"
     },
     [`& .${classes.messengerIcon}`]: {
         backgroundColor: "#2196f3",
@@ -37,7 +36,7 @@ const Banner = () => {
             <Container maxWidth="md" >
                 <Stack spacing={2} border={1} borderColor={"primary.main"} borderRadius={10} p={5} textAlign={"center"}>
                     <Typography variant='h1' className={classes.title}>
-                        صباغ الكويت
+                        <b>صباغ الكويت</b>
                     </Typography>
                     <Typography className={classes.text}>
                         مرحبًا بكم في خدمات صباغ الكويت، حيث نقدم خدمات صباغة متكاملة تتميز بالجودة والاحترافية. نحن متخصصون في تحويل المساحات إلى أعمال فنية بألوان نابضة بالحياة، مع التركيز على التفاصيل والجودة.

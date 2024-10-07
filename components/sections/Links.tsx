@@ -7,7 +7,7 @@ import SectionTitle from '../layouts/SectionTitle'
 const links = [
     {
         id: 1,
-        title: "أصباغ",
+        title: "اصباغ",
         href: "/aspagh",
     },
     {
@@ -32,7 +32,7 @@ const links = [
     },
     {
         id: 6,
-        title: "أصباغ الكويت",
+        title: "اصباغ الكويت",
         href: "/aisbgh-alkuayt",
     },
     {
@@ -183,7 +183,7 @@ const allLinks = links.concat(zones)
 const Links = () => {
     return (
         <Container maxWidth="lg" sx={{ my: 5 }} id="articles">
-            <SectionTitle sectionTitle={"صباغ الكويت"} />
+            <SectionTitle sectionTitle={"صباغ الكويت"} variant='body1'/>
             <Stack mt={4} direction={"row"} alignItems={"center"} flexWrap={"wrap"} justifyContent={"center"} useFlexGap={true} spacing={2}>
                 {allLinks.map(element => (
                     <CustomLink title={element.title} href={element.href} key={element.id}>

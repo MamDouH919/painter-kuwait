@@ -192,7 +192,7 @@ function Navbar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ justifyContent: "space-between", py: 2 }}>
                     <Stack mx={2}>
-                        <Typography color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
+                        <Typography component={"b"} color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
                             صباغ الكويت
                         </Typography>
                         {/* <Image src={"/logo.webp"} alt="logo" width={80} height={80} objectFit='contain' /> */}
