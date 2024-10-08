@@ -84,7 +84,6 @@ const About = () => {
     return (
         <Root maxWidth="lg" id={"about-us"}>
             <SectionTitle
-                variant='h1'
                 sectionTitle={"صباغ الكويت هو صباغ شاطر ورخيص في جميع اماكن الكويت"}
             />
             <Stack spacing={2} mt={5}>
@@ -113,7 +112,6 @@ const About = () => {
                                             height: "auto",
                                             borderRadius: 10
                                         }}
-                                        loading='lazy'
                                     />
                                 </AnimatedImage>
                             </Grid>
