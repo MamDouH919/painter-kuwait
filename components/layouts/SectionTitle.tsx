@@ -1,12 +1,12 @@
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import React from 'react'
 // import { styled } from "@mui/material/styles";
 
-const PREFIX = "SectionTitle";
+// const PREFIX = "SectionTitle";
 
-const classes = {
-    titleDivider: `${PREFIX}-titleDivider`,
-};
+// const classes = {
+//     titleDivider: `${PREFIX}-titleDivider`,
+// };
 
 // const Root = styled("div")(({ theme }) => ({
 //     [`& .${classes.titleDivider}`]: {
@@ -51,8 +51,8 @@ const SectionTitle = (props: inputProps) => {
             <Typography variant='body2' fontSize={14} textAlign={"center"} color={"text.secondary"} mt={1} width={"80%"} mx={"auto"}>
                 {subSectionTitle}
             </Typography>
-            <Stack className={classes.titleDivider}>
-            </Stack>
+            <Box sx={{ background: "linear-gradient(90deg,#755139 52%, #F2EDD7 52%)" }} borderRadius={10} width={100} height={"4px"} mt={2} mx={"auto"}>
+            </Box>
         </Box>
     )
 }

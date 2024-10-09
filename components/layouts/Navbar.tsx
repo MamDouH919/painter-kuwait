@@ -144,7 +144,7 @@ const NavLinks = [
     { label: "الصفحة الرئيسية", key: "home" },
     { label: "معلومات عنا", key: "about-us" },
     { label: "معرض أعمالنا", key: "our-work-gallery" },
-    { label: "روابط سرية", key: "articles" },
+    { label: "روابط سريعة", key: "articles" },
     { label: "خدماتنا", key: "our-services" },
 ]
 
