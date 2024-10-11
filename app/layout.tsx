@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ThemeProv from "@/context/ThemeProv";
 import SocialIcons from "@/components/layouts/SocialIcons";
-import { Cairo } from '@next/font/google'
+import { Cairo } from 'next/font/google'
 
 const cairo = Cairo({ weight: ["600", "700", "800"], subsets: ["latin"] })
 
@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   robots: "index,follow",
   keywords: "صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار",
   openGraph: {
-    type: "website",
+    type: "article",
+    authors: ["صباغ الكويت", "https://apartment-paint-kuwait.mountain-egy.site"],
     locale: "ar_AR",
     url: "https://apartment-paint-kuwait.mountain-egy.site",
     title: "صباغ الكويت 51108895 - صباغ شاطر ورخيص",
@@ -26,6 +27,10 @@ export const metadata: Metadata = {
       },
     ],
     siteName: "صباغ الكويت",
+    section: "خدمات صباغة",
+    publishedTime: "2024-10-1T12:00:00Z", // Publication date of the article
+    modifiedTime: "2024-10-10T14:00:00Z", // Last modified time (optional)
+    alternateLocale: "ar"
   },
   twitter: {
     card: "summary_large_image",
@@ -39,6 +44,15 @@ export const metadata: Metadata = {
     url: "https://apartment-paint-kuwait.mountain-egy.site",
   },
   bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت"],
+  alternates: {
+    canonical: "https://apartment-paint-kuwait.mountain-egy.site", // Canonical URL for SEO purposes
+    languages: {
+      "ar": "https://apartment-paint-kuwait.mountain-egy.site", // If you have an Arabic language version
+    },
+  },
+  applicationName: "صباغ الكويت",
+  creator:"mamdouh mohammed",
+  category: "خدمات صباغة",
 };
 
 
@@ -52,6 +66,7 @@ export default function RootLayout({
     <html lang={"ar"} dir={"rtl"}>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="content-language" content="ar" />
         <link rel="canonical" href="https://apartment-paint-kuwait.mountain-egy.site/" />
 
@@ -162,22 +177,6 @@ export default function RootLayout({
           <SocialIcons />
           {children}
         </ThemeProv>
-
-
-        {/* <script  async src="https://www.googletagmanager.com/gtag/js?id=G-YYCCSJQ60Q"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YYCCSJQ60Q');
-            `,
-          }}
-        /> */}
-
-
-
       </body>
     </html>
   );

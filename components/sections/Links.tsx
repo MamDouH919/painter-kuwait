@@ -1,4 +1,3 @@
-"use client"
 import React from 'react'
 import { CustomLink } from '../layouts/CustomLink'
 import { Container, Stack } from '@mui/material'

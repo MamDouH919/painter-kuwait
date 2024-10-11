@@ -1,7 +1,8 @@
 import { CustomLink } from '@/components/layouts/CustomLink'
 import PhoneStyle from '@/components/layouts/PhoneStyle'
+import Information from '@/components/sections/Information'
 import LinksContent from '@/components/sections/LinksContent'
-import { Container, Stack } from '@mui/material'
+import { Container, Stack, Typography } from '@mui/material'
 import { Metadata } from 'next'
 import React from 'react'
 
@@ -113,12 +114,16 @@ export const generateMetadata = async ({
 }
 
 const Page = ({ params: { id } }: { params: { id: string } }) => {
+    const _id = id.replace(/-/g, '_');
+
     return (
         <Container maxWidth="lg">
             <Stack my={5} spacing={3} alignItems={"center"}>
+                <Typography color='primary.main' component={"h1"} variant='h1' fontSize={35}>{titles[_id as keyof typeof titles]} | 51108895</Typography>
                 <CustomLink href={"/"}>الرجوع الي القائمة الرئسية </CustomLink>
                 <PhoneStyle />
                 <LinksContent id={id} />
+                <Information />
             </Stack>
         </Container>
     )

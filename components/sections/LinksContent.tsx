@@ -93,7 +93,6 @@ import sabaagh_alqrean from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 import sabaagh_alkswor from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 import sabaagh_aladaan from "@/app/Images/links-images/aisbgh_alkuayt.webp"
 
-import Information from './Information';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import { zones } from './Links';
 
@@ -492,7 +491,6 @@ const LinksContent = ({ id }: { id: string }) => {
         <Stack spacing={2} alignItems="center">
             {image ?? image}
             {!!content ? content : <Typography>Content not available.</Typography>}
-            <Information />
         </Stack>
     );
 };
