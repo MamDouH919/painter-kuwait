@@ -2,7 +2,6 @@
 import { Divider, Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
-import aspagh from '@/app/Images/links-images/aspagh.jpg';
 import sabaagh_rakhis from '@/app/Images/links-images/sabaagh-rakhis.webp';
 import sabaagh_shatir from '@/app/Images/links-images/sabaagh-shatir.jpeg';
 import muealim_sabagh from '@/app/Images/links-images/muealim-sabagh.jpg';
@@ -123,17 +122,6 @@ const generateLinkData = (title: string) => (
 
 // Data for different IDs
 const linksData: { [key: string]: React.ReactNode } = {
-    aspagh: (
-        <Stack alignItems="center" spacing={2}>
-            <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
-                ا<b>صباغ الكويت</b> - 51108895
-            </Typography>
-            <Typography textAlign="center" fontSize={18} color="text.secondary" width={{ xs: "auto", md: "80%" }}>
-                <b>صباغ الكويت</b> يوفر لكم كل هذه الاشياء في عمله فان خبرته تجعله افضل صباغ حيث انه يعمل بأفضل الخامات عليه الجودة الذي تجعل عمليه الدهان تتم على اكمل وجه كما يتميز بانه يمتلك فريق عمل متخصص ويجعله يتمم المهمة في اسرع وقت كما يتميز <b>صباغ الكويت</b> بانه يوفر لكم ارخص الاسعار داخل دولة الكويت ويتبع الطرق الحديثة في عمليات الدهان ودائما ما يسعى لتطوير الخدمات التي يقدمها من اجل ارضاء العملاء
-            </Typography>
-            <Divider component="div" orientation="horizontal" sx={{ width: '30%' }} />
-        </Stack>
-    ),
     sabaagh_rakhis: (
         <Stack alignItems="center" spacing={2}>
             <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
@@ -582,7 +570,6 @@ const de = {
 }
 
 const ImagesData: { [key: string]: React.ReactNode } = {
-    aspagh: <ImageStyle src={aspagh} alt='اصباغ الكويت' />,
     sabaagh_rakhis: <ImageStyle src={sabaagh_rakhis} alt="اصباغ الكويت" />,
     sabaagh_shatir: <ImageStyle src={sabaagh_shatir} alt="صباغ شاطر - صباغ ممتاز - صباغ الكويت" />,
     muealim_sabagh: <ImageStyle src={muealim_sabagh} alt="معلم صباغ" />,

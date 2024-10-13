@@ -7,7 +7,6 @@ import { Metadata } from 'next'
 import React from 'react'
 
 const titles = {
-    "aspagh": "اصباغ",
     "sabaagh_rakhis": "صباغ رخيص",
     "sabaagh_shatir": "صباغ شاطر",
     "muealim_sabagh": "معلم صباغ",
