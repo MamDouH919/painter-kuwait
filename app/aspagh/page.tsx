@@ -23,6 +23,7 @@ const Page = () => {
                 <PhoneStyle />
                 <Stack alignItems="center" spacing={2}>
                     <ImageStyle src={aspagh} alt='اصباغ الكويت' />
+
                     <Typography variant="h1" textAlign={"center"} fontWeight={500} fontSize={30} color="primary.main">
                         ا<b>صباغ الكويت</b> - 51108895
                     </Typography>

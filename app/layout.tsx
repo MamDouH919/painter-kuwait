@@ -7,7 +7,7 @@ import { Cairo } from 'next/font/google'
 const cairo = Cairo({ weight: ["600", "700", "800"], subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "صباغ الكويت 51108895 - صباغ شاطر ورخيص",
+  title: "صباغ الكويت - 51108895 - صباغ شاطر ورخيص",
   description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية وبأسعار تنافسية في جميع مناطق الكويت.",
   robots: "index,follow",
   keywords: "صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     authors: ["صباغ الكويت", "https://apartment-paint-kuwait.mountain-egy.site"],
     locale: "ar_AR",
     url: "https://apartment-paint-kuwait.mountain-egy.site",
-    title: "صباغ الكويت 51108895 - صباغ شاطر ورخيص",
+    title: "صباغ الكويت - 51108895 - صباغ شاطر ورخيص",
     description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية وبأسعار تنافسية.",
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "صباغ الكويت 51108895 - صباغ شاطر ورخيص",
+    title: "صباغ الكويت - 51108895 - صباغ شاطر ورخيص",
     description: "صباغ الكويت يقدم خدمات صباغة رخيصة واحترافية بجودة عالية في جميع مناطق الكويت.",
     images: "https://apartment-paint-kuwait.mountain-egy.site/image.png",
   },
@@ -66,10 +66,7 @@ export default function RootLayout({
     <html lang={"ar"} dir={"rtl"}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="content-language" content="ar" />
-        <link rel="canonical" href="https://apartment-paint-kuwait.mountain-egy.site/" />
-
         <link
           rel="apple-touch-icon"
           href="/apple-icon?<generated>"
@@ -95,7 +92,7 @@ export default function RootLayout({
                     "@type": "WebPage",
                     "@id": "https://apartment-paint-kuwait.mountain-egy.site/",
                     "url": "https://apartment-paint-kuwait.mountain-egy.site/",
-                    "name": "صباغ الكويت 51108895 صباغ شاطر ورخيص",
+                    "name": "صباغ الكويت - 51108895 - صباغ شاطر ورخيص",
                     "isPartOf": { "@id": "https://apartment-paint-kuwait.mountain-egy.site#website" },
                     "primaryImageOfPage": { "@id": "https://apartment-paint-kuwait.mountain-egy.site/#primaryimage" },
                     "image": { "@id": "https://apartment-paint-kuwait.mountain-egy.site/#primaryimage" },

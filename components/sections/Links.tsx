@@ -71,8 +71,8 @@ const links = [
     },
     {
         id: 14,
-        title: "صباغ بيوت اطفال",
-        href: "sabaagh-buyut-aitfal",
+        title: "صباغ غرف اطفال",
+        href: "sabaagh-ghoraf-aitfal",
     },
     {
         id: 15,
