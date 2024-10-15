@@ -24,7 +24,7 @@ export default function Home() {
             p={5}
             textAlign="center"
           >
-            <Typography variant="h3" color="primary.main">
+            <Typography variant="h1" fontSize={40} color="primary.main">
               <b>صباغ الكويت</b>
             </Typography>
             <Typography color="#000" variant="body1" lineHeight={1.7}>
