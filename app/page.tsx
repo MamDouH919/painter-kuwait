@@ -14,17 +14,32 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Box bgcolor={"secondary.main"} mt={8} py={10} id="home">
+      <Box bgcolor="secondary.main" mt={8} py={10} id="home">
         <Container maxWidth="md">
-          <Stack spacing={2} border={1} borderColor={"primary.main"} borderRadius={10} p={5} textAlign={"center"}>
-            <Typography variant="h1" color="primary.main" fontSize={40}>
+          <Stack
+            spacing={4}
+            border={1}
+            borderColor="primary.main"
+            borderRadius={2}
+            p={5}
+            textAlign="center"
+          >
+            <Typography variant="h3" color="primary.main">
               <b>صباغ الكويت</b>
             </Typography>
-            <Typography color="#000">
-              مرحبًا بكم في خدمات <b>صباغ الكويت</b>، حيث نقدم خدمات صباغة متكاملة تتميز بالجودة والاحترافية. نحن متخصصون في تحويل المساحات إلى أعمال فنية بألوان نابضة بالحياة، مع التركيز على التفاصيل والجودة.
+            <Typography color="#000" variant="body1" lineHeight={1.7}>
+              مرحبًا بكم في خدمات <b>صباغ الكويت</b>، حيث نقدم خدمات صباغة
+              متكاملة تتميز بالجودة والاحترافية. نحن متخصصون في تقديم حلول صباغة
+              في الكويت عالية الجودة ونسعى دائمًا لتقديم أفضل خدمة لعملائنا.
             </Typography>
-            <Typography color="#000">
-              مع فريق من الخبراء ذوي الخبرة العالية واستخدام أحدث التقنيات، نحن هنا لتحقيق رؤيتكم وتلبية احتياجاتكم بأعلى مستوى من الرضا.
+            <Typography color="#000" variant="body1" lineHeight={1.7}>
+              فريقنا في <b>صباغ الكويت</b> يتألف من خبراء ذوي كفاءة عالية،
+              والذين يستخدمون أحدث التقنيات لتقديم أفضل النتائج. نحن هنا لتحقيق
+              رؤيتكم وتلبية احتياجاتكم بأعلى مستوى من الرضا.
+            </Typography>
+            <Typography color="#000" variant="body1" lineHeight={1.7}>
+              نحن في <b>صباغ الكويت</b> نؤمن بأهمية التفاصيل وجودة العمل. لهذا،
+              نحرص على توفير ألوان نابضة بالحياة وتجربة صباغة مميزة.
             </Typography>
           </Stack>
           <PhoneStyle />

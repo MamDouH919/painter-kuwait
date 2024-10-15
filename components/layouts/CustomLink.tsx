@@ -11,7 +11,7 @@ const classes = {
 const Root = styled("div")(({ theme }) => ({
     // background: theme.palette.background.default,
     "a": {
-        textDecoration: "none",
+        // textDecoration: "none",
         color: theme.palette.primary.main,
         display: "flex",
         justifyContent: "center",
@@ -27,7 +27,7 @@ const Root = styled("div")(({ theme }) => ({
             background: theme.palette.secondary.main,
             // color: `${theme.palette.primary.light}!Important`,
             // font: "bold",
-            // textDecoration: "underline",
+            textDecoration: "underline",
         },
         [`&.${classes.active}`]: {
             opacity: 1,
