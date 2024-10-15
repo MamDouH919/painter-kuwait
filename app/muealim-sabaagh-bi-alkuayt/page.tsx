@@ -10,7 +10,7 @@ import muealim_sabaagh_bi_alkuayt from '@/app/Images/links-images/muealim_sabaag
 const title = "معلم صباغ في الكويت"
 
 export const metadata: Metadata = {
-    title: `صباغ الكويت 51108895 - صباغ شاطر ورخيص - ${title}`,
+    title: `صباغ الكويت - 51108895 - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
 }
 

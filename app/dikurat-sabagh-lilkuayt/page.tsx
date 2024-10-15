@@ -10,7 +10,7 @@ import dikurat_sabagh_lilkuayt from '@/app/Images/links-images/dikurat_sabagh_li
 const title = "صباغ ديكورات بالكويت"
 
 export const metadata: Metadata = {
-    title: `صباغ الكويت 51108895 - صباغ شاطر ورخيص - ${title}`,
+    title: `صباغ الكويت - 51108895 - صباغ شاطر ورخيص - ${title}`,
     keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
 }
 

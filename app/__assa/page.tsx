@@ -22,7 +22,7 @@ export const generateMetadata = async ({
     const title = titles[_id as keyof typeof titles];
 
     return {
-        title: `صباغ الكويت 51108895 - صباغ شاطر ورخيص - ${title}`,
+        title: `صباغ الكويت - 51108895 - صباغ شاطر ورخيص - ${title}`,
         keywords: `صباغ الكويت, صباغ شاطر, صباغ رخيص, اصباغ داخلية وخارجية, صباغ في الكويت, اصباغ حديثة, صباغ الكويت بأفضل الأسعار, ${title}`,
     };
 }
