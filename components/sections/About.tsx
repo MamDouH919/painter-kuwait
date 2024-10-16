@@ -79,6 +79,7 @@ const About = () => {
                                 <Grid size={{ xs: 12, md: 6 }}>
                                     <div>
                                         <Image
+                                            title={element.title}
                                             src={element.image}
                                             alt={element.title}
 
@@ -91,7 +92,7 @@ const About = () => {
                                     </div>
                                 </Grid>
                                 <Grid size={{ xs: 12, md: 6 }} container justifyContent={"center"} alignItems={"center"}>
-                                    <Typography color='primary.main' mb={2} fontSize={30} fontWeight={500}>
+                                    <Typography variant='h3' color='primary.main' mb={2} fontSize={30} fontWeight={500}>
                                         {element.title}
                                     </Typography>
                                     {element.description}
