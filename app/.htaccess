@@ -4,6 +4,6 @@ Options -MultiViews
 # Enable the Rewrite Engine
 RewriteEngine On
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.apartment-paint-kuwait\.mountain-egy\.site$ [NC]
-RewriteRule ^(.*)$ http://apartment-paint-kuwait.mountain-egy.site/$1 [R=301,L]
+# Redirect www to non-www with HTTPS
+RewriteCond %{HTTP_HOST} ^www\.thebest-paint-kuwait\.site$ [NC]
+RewriteRule ^(.*)$ https://thebest-paint-kuwait.site/$1 [R=301,L]
