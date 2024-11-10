@@ -45,7 +45,6 @@ export const metadata: Metadata = {
   },
   bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت"],
   alternates: {
-    canonical: "https://thebest-paint-kuwait.com", // Canonical URL for SEO purposes
     languages: {
       "ar": "https://thebest-paint-kuwait.com", // If you have an Arabic language version
     },
