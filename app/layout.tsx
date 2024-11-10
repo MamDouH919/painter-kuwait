@@ -45,6 +45,7 @@ export const metadata: Metadata = {
   },
   bookmarks: ["صباغ الكويت", "صباغ شاطر", "صباغ رخيص", "الكويت"],
   alternates: {
+    canonical: "https://thebest-paint-kuwait.com", // Canonical URL for SEO purposes
     languages: {
       "ar": "https://thebest-paint-kuwait.com", // If you have an Arabic language version
     },
@@ -79,7 +80,6 @@ export default function RootLayout({
           type="image/<generated>"
           sizes="<generated>"
         />
-        <meta name="google-site-verification" content="X-PztMGTdyBvqrdgLU4z7Wj5BFO-19uxIwLCwtkCbfM" />
         {/* <GoogleAnalytics gaId="G-YYCCSJQ60Q" /> */}
         <script
           type="application/ld+json"
