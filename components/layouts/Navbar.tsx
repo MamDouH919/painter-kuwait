@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import { Divider, MenuItem, Stack, Typography } from '@mui/material';
+import { Divider, MenuItem, Stack } from '@mui/material';
 import { Fragment, useEffect, useState } from 'react';
 import clsx from 'clsx';
 // import Settings from './Settings';
@@ -17,6 +17,7 @@ import { keyframes } from '@mui/system';
 // import Image from 'next/image';
 import { Link as ScrollLink } from "react-scroll";
 import { useTheme } from '@mui/material';
+import Image from 'next/image';
 
 
 // import { useAppSelector } from '../store/store';
@@ -192,10 +193,10 @@ function Navbar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ justifyContent: "space-between", py: 2 }}>
                     <Stack mx={2}>
-                        <Typography component={"b"} color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
+                        {/* <Typography component={"b"} color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
                             صباغ الكويت
-                        </Typography>
-                        {/* <Image src={"/logo.webp"} alt="logo" width={80} height={80} objectFit='contain' /> */}
+                        </Typography> */}
+                        <Image src={"/logo.png"} alt="logo" width={150} height={80} objectFit='contain' />
                         {/* <img src={logo} alt='logo' height={80} srcSet={logo} /> */}
                     </Stack>
                     <Stack direction={"row"} spacing={1} useFlexGap alignItems={"center"}>
