@@ -442,7 +442,52 @@ export const zones = [
         id: 87,
         title: "صباغ العدان",
         href: "sabaagh-aladaan"
-    }
+    },
+    {
+        id: 88,
+        title: "صباع سعد العبدالله",
+        href: "sabaagh-saad-alabdullah"
+    },
+    {
+        id: 89,
+        title: "صباغ الجهراء",
+        href: "sabaagh-aljahraa"
+    },
+    {
+        id: 90,
+        title: "صباغ عبدالله مبارك",
+        href: "sabaagh-abdullah-mubarak"
+    },
+    {
+        id: 91,
+        title: "صباغ غرب عبدالله",
+        href: "sabaagh-gharb-abdullah"
+    },
+    {
+        id: 92,
+        title: "صباغ جنوب عبدالله",
+        href: "sabaagh-janoub-abdullah"
+    },
+    {
+        id: 93,
+        title: "صباغ العارضية",
+        href: "sabaagh-alaardiya"
+    },
+    {
+        id: 94,
+        title: "صباغ الفردوس",
+        href: "sabaagh-alfardus"
+    },
+    {
+        id: 95,
+        title: "صباغ صباح الناصر",
+        href: "sabaagh-subah-alanasir"
+    },
+    {
+        id: 96,
+        title: "صباغ الرومانسية",
+        href: "sabaagh-alromanisya"
+    },
 ];
 
 const allLinks = links.concat(zones)

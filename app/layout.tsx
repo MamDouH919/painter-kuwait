@@ -651,6 +651,60 @@ export default function RootLayout({
                         "name": "صباغ العدان",
                         "item": "https://thebest-paint-kuwait.com/sabaagh-aladaan"
                       },
+                      {
+                        "@type": "ListItem",
+                        "position": 88,
+                        "name": "صباع سعد العبدالله",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-saad-alabdullah"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 89,
+                        "name": "صباغ الجهراء",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-aljahraa"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 90,
+                        "name": "صباغ عبدالله مبارك",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-abdullah-mubarak"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 91,
+                        "name": "صباغ غرب عبدالله",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-gharb-abdullah"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 92,
+                        "name": "صباغ جنوب عبدالله",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-janoub-abdullah"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 93,
+                        "name": "صباغ العارضية",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-alaardiya"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 94,
+                        "name": "صباغ الفردوس",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-alfardus"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 95,
+                        "name": "صباغ صباح الناصر",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-subah-alanasir"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 96,
+                        "name": "صباغ الرومانسية",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-alromanisya"
+                      },
                     ]
                   },
                   {

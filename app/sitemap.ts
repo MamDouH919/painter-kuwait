@@ -532,5 +532,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-saad-alabdullah',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-aljahraa',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-abdullah-mubarak',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-gharb-abdullah',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-janoub-abdullah',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-alaardiya',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-alfardus',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-subah-alanasir',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-alromanisya',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 }
