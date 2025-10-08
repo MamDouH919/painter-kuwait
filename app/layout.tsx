@@ -71,6 +71,7 @@ export default function RootLayout({
   return (
     <html lang={"ar"} dir={"rtl"}>
       <head>
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="f/dwVs440mjOEffzvSuM4A" async></script>
         <meta name="google-site-verification" content="Lu0G3lQr4L0zyx6SMtomb38CxSEVBjS_mLvLzP9MLB4" />
         <link rel="icon" href="/favicon.ico" />
         <meta httpEquiv="content-language" content="ar" />
