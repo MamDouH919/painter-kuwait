@@ -196,7 +196,7 @@ function Navbar() {
                         {/* <Typography component={"b"} color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
                             صباغ الكويت
                         </Typography> */}
-                        <Image src={"/logo.png"} alt="logo" width={150} height={80} objectFit='contain' />
+                        <Image src={"/logo.png"} alt="logo" width={150} height={50} objectFit='contain' />
                         {/* <img src={logo} alt='logo' height={80} srcSet={logo} /> */}
                     </Stack>
                     <Stack direction={"row"} spacing={1} useFlexGap alignItems={"center"}>

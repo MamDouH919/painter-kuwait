@@ -76,17 +76,17 @@ const About = () => {
                                 p={3}
                                 textAlign={"center"}
                             >
-                                <Grid size={{ xs: 12, md: 6 }}>
-                                    <div>
+                                <Grid size={{ xs: 12, md: 6 }} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                                    <div style={{ width: 300, height: 300 }}>
                                         <Image
                                             title={element.title}
                                             src={element.image}
                                             alt={element.title}
-
                                             style={{
                                                 width: "100%",
-                                                height: "auto",
-                                                borderRadius: 10
+                                                height: "100%",
+                                                borderRadius: 10,
+                                                objectFit: "cover", // keeps aspect ratio nicely
                                             }}
                                         />
                                     </div>
