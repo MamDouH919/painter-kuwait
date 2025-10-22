@@ -23,9 +23,9 @@ export default function Home() {
       <Navbar />
       <HeroSlider />
       <Banner />
+      <Portfolio />
       <About />
       <ServicesTwo />
-      <Portfolio />
       {/* <App /> */}
       <Links />
       <Stats />

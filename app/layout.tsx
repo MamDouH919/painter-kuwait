@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ThemeProv from "@/context/ThemeProv";
-import SocialIcons from "@/components/layouts/SocialIcons";
 import { Cairo } from 'next/font/google'
+import dynamic from 'next/dynamic';
+
+// Dynamically import the components
+const SocialIcons = dynamic(() => import("@/components/layouts/SocialIcons"));
+const ThemeProv = dynamic(() => import("@/context/ThemeProv"));
 
 const cairo = Cairo({ weight: ["600", "700", "800"], subsets: ["latin"] })
 

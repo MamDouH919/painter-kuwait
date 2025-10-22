@@ -60,7 +60,12 @@ const Cta = () => {
                 </Description>
 
                 {/* Call-to-action button */}
-                <Link href="/contact" passHref>
+                <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="whatsApp"
+                    href={`https://wa.me/+96551108895`}
+                >
                     <StyledButton
                         size="large"
                         aria-label="انتقل إلى صفحة الاتصال"

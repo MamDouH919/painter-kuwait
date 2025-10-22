@@ -96,10 +96,18 @@ const LinkStyled = styled(Link)(() => ({
     textDecoration: "none",
 }));
 
-const AnimatedLine = styled(Stack)<{ isVisible: boolean }>(({ isVisible }) => ({
+const AnimatedLine = styled(Stack)(() => ({
     transition: "all 0.7s ease",
-    transform: isVisible ? "translateY(0)" : "translateY(2rem)",
-    opacity: isVisible ? 1 : 0,
+    "&.visible": {
+        transform: "translateY(0)",
+        opacity: 1,
+    },
+    "&.invisible": {
+        transform: "translateY(2rem)",
+        opacity: 0,
+    },
+    // transform: isVisible ? "translateY(0)" : "translateY(2rem)",
+    // opacity: isVisible ? 1 : 0,
 }));
 
 const MainHeading = styled("h1")(({ theme }) => ({
@@ -188,9 +196,9 @@ const PhoneNumber = styled("p")(({ theme }) => ({
     lineHeight: 1,
 }));
 const SplideStyle = styled(Splide)(({ theme }) => ({
-    height: 600,
+    height: 700,
     [theme.breakpoints.down("md")]: {
-        height: 400,
+        height: 550,
     },
 }));
 
@@ -215,7 +223,7 @@ function AnimatedText({ lines, isActive, delay = 500 }: AnimatedTextProps) {
             {lines.map((line, index) => (
                 <AnimatedLine
                     key={index}
-                    isVisible={index < visibleLines}
+                    className={`${index < visibleLines ? "visible" : "invisible"}`}
                     spacing={2}
                 >
                     {index === 0 && (
@@ -251,7 +259,7 @@ function AnimatedText({ lines, isActive, delay = 500 }: AnimatedTextProps) {
                             <PhoneCard>
                                 <PhoneCardContent>
                                     <PhoneIconContainer>
-                                        <FaPhone size={20} color="white"/>
+                                        <FaPhone size={20} color="white" />
                                     </PhoneIconContainer>
                                     <PhoneInfo>
                                         <PhoneLabel>هاتف</PhoneLabel>
@@ -295,8 +303,8 @@ export default function HeroSlider() {
         <Root
             mt={8}
             height={{
-                xs: 400,
-                md: 600,
+                xs: 550,
+                md: 700,
             }}
             position={"relative"}
             overflow={"hidden"}
@@ -327,16 +335,31 @@ export default function HeroSlider() {
                 {slides.map((slide, index) => (
                     <SplideSlide key={slide.id}>
                         <div className="relative h-full w-full">
-                            <Image
-                                alt={slide.title}
-                                className="image-style"
-                                src={index === 0 ? isSlideActiveFirst ? "/images/low-quality-placeholder.webp" : slide.image : slide.image}
-                                placeholder="blur"
-                                blurDataURL={"/images/low-quality-placeholder.webp"}
-                                fill
-                                priority={index === 0}
-                                loading={index === 0 ? "eager" : "lazy"}
-                            />
+                            <Stack
+                                position={"relative"}
+                                width={"100%"}
+                                height={{
+                                    xs: 550,
+                                    md: 700,
+                                }}
+                            >
+                                <Image
+                                    alt={slide.title}
+                                    className="image-style"
+                                    src={
+                                        index === 0
+                                            ? isSlideActiveFirst
+                                                ? "/images/low-quality-placeholder.webp"
+                                                : slide.image
+                                            : slide.image
+                                    }
+                                    placeholder="blur"
+                                    blurDataURL="/images/low-quality-placeholder.webp"
+                                    fill
+                                    priority={index === 0}
+                                    loading={index === 0 ? "eager" : "lazy"}
+                                />
+                            </Stack>
                             <div className="gradient-overlay" />
 
                             <div className="content-overlay">

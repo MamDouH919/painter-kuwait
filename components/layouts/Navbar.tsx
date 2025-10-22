@@ -193,11 +193,13 @@ function Navbar() {
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ justifyContent: "space-between", py: 2 }}>
                     <Stack mx={2}>
-                        {/* <Typography component={"b"} color={"primary"} fontSize={30} textAlign={"center"} fontWeight={"bold"}>
-                            صباغ الكويت
-                        </Typography> */}
-                        <Image src={"/logo.png"} alt="logo" width={150} height={50} objectFit='contain' />
-                        {/* <img src={logo} alt='logo' height={80} srcSet={logo} /> */}
+                        <Image
+                            src="/logo.png"
+                            alt="logo"
+                            width={150}
+                            height={60}
+                            style={{ objectFit: "contain" }}
+                        />
                     </Stack>
                     <Stack direction={"row"} spacing={1} useFlexGap alignItems={"center"}>
                         <Stack direction={"row"} alignItems={"center"} spacing={1} useFlexGap sx={{ display: { xs: 'none', md: 'flex' } }}>
