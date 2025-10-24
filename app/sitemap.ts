@@ -581,7 +581,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://thebest-paint-kuwait.com/sabaagh-alromanisya',
+      url: 'https://thebest-paint-kuwait.com/sabaagh-alrumaithiya',
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://thebest-paint-kuwait.com/sabaagh-alyarmouk',
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,

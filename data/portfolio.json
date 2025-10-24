@@ -21,57 +21,27 @@
     },
     {
         "title": "اصباغ جوتن",
-        "image": "portfolio/jotun.webp",
+        "image": "portfolio/port5.jpeg",
         "isMain": false
     },
     {
         "title": "اصباغ GTC",
-        "image": "portfolio/gtc.jpg",
+        "image": "portfolio/port6.jpeg",
         "isMain": false
     },
     {
         "title": "عازل الأسطح بجميع أنواعه",
-        "image": "portfolio/azel.webp",
+        "image": "portfolio/port7.jpeg",
         "isMain": true
     },
     {
         "title": "جبس بورد",
-        "image": "portfolio/jabs.jpg",
+        "image": "portfolio/port8.jpeg",
         "isMain": true
     },
     {
         "title": "ديكورات وبرويز",
-        "image": "portfolio/decors.webp",
-        "isMain": true
-    },
-    {
-        "title": "اعمل خلفيات للتلفزيون والشاشات",
-        "image": "portfolio/tv.webp",
-        "isMain": true
-    },
-    {
-        "title": "بديل الرخام",
-        "image": "portfolio/ro5am.webp",
-        "isMain": true
-    },
-    {
-        "title": "بديل الخشب",
-        "image": "portfolio/5ashb.webp",
-        "isMain": true
-    },
-    {
-        "title": "بديل الشيبورد",
-        "image": "portfolio/sheboard.webp",
-        "isMain": true
-    },
-    {
-        "title": "ورق جدران",
-        "image": "portfolio/wall-paper.webp",
-        "isMain": true
-    },
-    {
-        "title": "بديل الحجر",
-        "image": "portfolio/7agr.jpg",
+        "image": "portfolio/port9.jpeg",
         "isMain": true
     }
 ]

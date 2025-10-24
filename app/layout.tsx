@@ -706,8 +706,14 @@ export default function RootLayout({
                       {
                         "@type": "ListItem",
                         "position": 96,
-                        "name": "صباغ الرومانسية",
-                        "item": "https://thebest-paint-kuwait.com/sabaagh-alromanisya"
+                        "name": "صباغ الرميثية",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-alrumaithiya"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 63,
+                        "name": "صباغ اليرموك",
+                        "item": "https://thebest-paint-kuwait.com/sabaagh-alyarmouk"
                       },
                     ]
                   },

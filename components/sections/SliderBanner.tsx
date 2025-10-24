@@ -18,7 +18,7 @@ const slides = [
         description: "خدمات الأصباغ والدهان المتميزة",
         buttonText: "اتصل بنا الآن",
         image: "/images/sabagh-kuwait-the.webp",
-        phone: "50713199",
+        phone: "51108895",
         ariaLabel: "أبو يوسف - صباغ الكويت",
     },
     {
@@ -28,7 +28,7 @@ const slides = [
         description: "نقدم أفضل خدمات الأصباغ في الكويت",
         buttonText: "شاهد أعمالنا",
         image: "/images/sabagh-kuwait-about.webp",
-        phone: "50713199",
+        phone: "51108895",
         ariaLabel: "خدمات متميزة - صباغ الكويت",
     },
     {
@@ -38,7 +38,7 @@ const slides = [
         description: "فريق من أمهر الصباغين المحترفين",
         buttonText: "احصل على عرض سعر",
         image: "/images/sabagh-kuwait-team.webp",
-        phone: "50713199",
+        phone: "51108895",
         ariaLabel: "فريق محترف - صباغ الكويت",
     },
 ];

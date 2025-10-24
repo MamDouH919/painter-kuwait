@@ -485,8 +485,13 @@ export const zones = [
     },
     {
         id: 96,
-        title: "صباغ الرومانسية",
-        href: "sabaagh-alromanisya"
+        title: "صباغ الرميثية",
+        href: "sabaagh-alrumaithiya"
+    },
+    {
+        id: 96,
+        title: "صباغ اليرموك",
+        href: "sabaagh-alyarmouk"
     },
 ];
 

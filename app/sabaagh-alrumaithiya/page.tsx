@@ -7,7 +7,7 @@ import React from 'react'
 import image from '@/app/Images/links-images/sabaagh_alsaalimia.jpg';
 import { ImageStyle } from '@/components/layouts/ImageStyle'
 
-const title = "صباغ الرومانسية"
+const title = "صباغ الرميثية"
 
 export const metadata: Metadata = {
     title: `صباغ الكويت - 51108895 - صباغ شاطر ورخيص - ${title}`,
